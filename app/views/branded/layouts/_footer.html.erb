@@ -1,0 +1,46 @@
+<!-- footer container -->
+<footer class="footer">
+    <div class="left_side_footer">
+    	<div class="first_row">
+        	<ul class="footer-links">
+	            <li><a href="<%= contact_us_path %>"><%= _('Contact us') %></a></li>
+	            <li class="muted">|</li>
+	            <li><a href="<%= terms_path %>"><%= _('Terms of use') %></a></li>
+       		</ul>
+       	</div>
+       	<div class="second_row">
+    		<p id="dcc_link">&copy; 2004 - <%= Time.now.year %><%= link_to " #{Rails.configuration.branding[:organisation][:copywrite_name]}", "#{Rails.configuration.branding[:organisation][:url]}"%>
+       		</p>
+    	</div>
+    </div>
+    <div class="middle-side_footer">
+       <%= link_to( image_tag('logo-bsn.jpg', :class => 'footer_logo_bsn'), 'http://www.bibliothequescientifiquenumerique.fr//', :target => '_blank', :id => 'footer_middle_bsn')%>
+       <%= link_to( image_tag('cnrs.png', :class => 'footer_logo_cnrs'), 'http://www.cnrs.fr/', :target => '_blank', :id => 'footer_middle_cnrs')%>
+     </div>
+    	<div class="right_side_footer">
+    		<p><%= link_to( image_tag('dmp-logo.png', :class => 'footer_logo'), 'http://dmponline.dcc.ac.uk/about_us', :target => '_blank', :id => 'footer_right_dmp')%></p>
+      </div>
+
+</footer>
+
+<% if !user_signed_in? then %>
+	<div id="header-login-form" class="modal hide fade">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3><%= _('Sign in')%></h3>
+		</div>
+		<div class="modal-body">
+			<%= render :partial => "shared/login_form" %>
+		</div>
+	</div>
+	<div id="header-register-form" class="modal hide fade">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3><%= _('Create account')%></h3>
+		</div>
+		<div class="modal-body">
+			<%= render :partial => "shared/register_form", locals: {extended: false} %>
+		</div>
+	</div>
+
+<% end %>

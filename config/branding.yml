@@ -2,10 +2,10 @@ defaults: &defaults
   legal_entity: 'Centre National de la Recherche Scientifique'
 
   organisation:
-    name: 'INstitut de l''Information Scientifique et Technique'
+    name: 'Institut de l''Information Scientifique et Technique'
     abbreviation: 'INIST'
     url: 'https://github.com/DMPRoadmap/roadmap/wiki'
-    copywrite_name: 'INIST'
+    copywrite_name: 'CNRS & BSN10'
     email: 'info-opidor@inist.fr'
     address_line1: 'Equipe Valorisation Données de la recherche - Inist-CNRS'
     address_line1: '2, allée du parc de Brabois'

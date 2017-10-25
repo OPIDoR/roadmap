@@ -1,4 +1,30 @@
 fr:
+  about_page:
+    title: "À propos de DMP OPIDoR"
+    # tab_1: "DMP OPIDoR"
+    # tab_2: "Dernières nouvelles"
+    # une page unique encadrée
+
+    body_text_html: "<div class='white_background'><p>Un plan de gestion de données (DMP) est un document qui spécifie quelle donnée doit être collectée ou générée, comment celle-ci doit être gérée, partagée et préservée pendant et après le projet. La préparation d'un plan est une bonne pratique pour tout projet de recherche générant des données. Par ailleurs, les organismes et les institutions de financement exigent de plus en plus de leurs chercheurs la production de DMPs.</p><p>DMP OPIDoR est un outil d'aide à la rédaction de DMP</p><p>DMP OPIDoR est basé sur le code de l'outil <a href='https://dmponline.dcc.ac.uk/' target='_blank'>DMPonline</a> developpé par l'organisme anglais <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a> (DCC). Le code source de DMP OPIDoR est dérivé du code de DMPonline, il est disponible sur <a href='https://github.com/OPIDoR/DMPonline_v4' target=' blank'>GitHub</a>. DMP OPIDoR a été personnalisé pour les chercheurs français.</p></br>
+      <h3>Fonctionnement de l'outil</h3>
+      <p>DMP OPIDoR comprend un certain nombre de modèles qui sont représentatifs des prescriptions de différents organismes financeurs et d'établissements. Au départ, les utilisateurs doivent répondre à trois questions pour que nous puissions déterminer le modèle qu'il convient d'afficher(par ex. : le modèle ESRC pour une soumission dans le cadre d'un appel à projet de l'ESRC). Des recommandations vous sont fournies pour vous permettre d'interpréter les questions posées et d'y répondre. Ces recommandations sont fournies selon les agences de financement, les universités et les disciplines.</p>
+      <p>Des conseils sont fournis pour vous aider à interpréter et à répondre aux questions. Ces recommandations sont fournies par les financeurs, les organismes de recherche, les universités, les disciplines et du Digital Curation Centre. Les directives DCC sont listées dans le document suivant: <a target='_blank' href='http://www.dcc.ac.uk/webfm_send/1703'>'Using the DMPonline admin interface: a guide to customising the tool'</a> par Jones S. et le DCC (Licence CC-BY).</p>
+      <h3>Pour commencer...</h3>
+      <p>En l'absence de compte DMP OPIDoR, cliquez sur <a href='/'>'Créer un compte'</a> en page d'accueil.</p>
+      <p>Si vous avez un compte, s'il vous plait connectez vous :</p>
+      <ul>
+        <li>- à l'aide de votre compte institutionnel. Votre compte DMP OPIDor sera lié à votre compte institutionnel.</li>
+        <li>- ou à l'aide de votre compte individuel.</li>
+      </ul>
+      <p>Et vous pouvez commencer à créer ou modifier votre plan de gestion des données.</p>
+      <p>Visitez la page d'<a href='/help'>'Aide'</a> pour quelques conseils.</p>
+      <h3>Autres informations</h3>
+      <p>Nous améliorons constamment l'interface utilisateur de DMP OPIDoR et ses fonctionnalités.
+      <p>Si vous souhaitez apporter une contribution par un retour ou des suggestions, veuillez nous contacter par courriel : <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p><br/>
+      <h3>Personnaliser DMP OPIDoR</h3>
+      <p>DMP OPIDoR peut être personnalisé par institutions et disciplines. Vous pouvez ajouter des modéles et des conseils pour les utilisateurs de votre organisme expliquant les différentes supports et services offerts par l'outil. Des exemples de réponses peuvent être proposés afin d'aider les utilisateurs à écrire leur plan de gestion des données. Pour ce faire vous aurez besoin de demander l'accés administrateur, donc s'il vous plait contactez nous à cette adresse <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p></div><br/>"
+
+
   help_page:
     title: "Aide"
     tab_1: "À propos de DMP OPIDoR"

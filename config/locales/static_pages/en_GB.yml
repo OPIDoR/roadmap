@@ -1,4 +1,29 @@
 en_GB:
+  about_page:
+    title: "About DMP OPIDoR"
+    # tab_1: "DMP OPIDoR"
+    # tab_2: "Background"
+    # une page unique encadrée
+
+    body_text_html: "<div class='white_background'><p>A Data Management Plan (DMP) is a document that specifies which data will be collected or generated, how they will be managed, shared and preserved during and after the project. Preparing a plan is a good practice of any research project generating data. Moreover, funding bodies and institutions increasingly require their researchers to produce DMPs.</p><p>DMP OPIDoR is a tool to help you write a DMP.</p><p>DMP OPIDoR is based on <a href='https://dmponline.dcc.ac.uk/' target='_blank'>DMPonline</a> code, originally developped by UK's <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a> (DCC). DMP OPIDoR source code is forked from the DMPonline code and is available on <a href='https://github.com/OPIDoR/DMPonline_v4' target=' blank'>GitHub</a>. DMP OPIDoR has been customised for French researchers.</p></br>
+    <h3>How the tool works</h3>
+        <p>DMP OPIDoR includes a number of templates that represent the requirements of different funders and institutions. Where funder or institution doesn't have specific requirements, the tool includes a default DMP, which is the template provided by <a target='_blank' href='http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf'>European Commission in Horizon 2020</a>.</p>
+        <p>Guidance is provided to help you interpret and answer the questions. This guidance is provided by research funders, research organisations, universities, disciplines and the Digital Curation Centre. The thematic DCC guidance is listed in <a target='_blank' href='http://www.dcc.ac.uk/webfm_send/1703'>'Using the DMPonline admin interface: a guide to customising the tool'</a> by Jones S. and DCC (Licence CC-BY).</p>
+    <h3>Getting Started</h3>
+    <p>If you do not have a DMP OPIDoR account, click on <a href='/'>'Create an account'</a> on the homepage.</p>
+    <p>If you have an account, please log in :</p>
+    <ul>
+      <li>- with the institutional access. Your DMP OPIDoR account will be linked to your institutional credentials.</li>
+      <li>- or with the individual access.</li>
+    </ul>
+    <p>And start creating or editing your DMP.</p>
+    <p>Please visit the <a href='/help'>'Help'</a> page for guidance.</p>
+    <p>If you have any questions or comments about DMP OPIDoR, please contact <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p>
+    <h3>Additional Information</h3>
+    <p>We are constantly improving the user interface and functionality of DMP OPIDoR. If you would like to contribute with feedback and suggestions, please contact us by emailing <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p>
+    <h3>Customise DMP OPIDoR</h3>
+    <p>DMP OPIDoR can be customised by institutions and scholarly communities. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p></div></br>"
+
   help_page:
     title: "Help"
     tab_1: "On DMP OPIDoR"

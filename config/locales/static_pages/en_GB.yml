@@ -1,4 +1,7 @@
 en_GB:
+  helpers:
+    institution_sign_in: "Institutional Access"
+    classic_sign_in: "Individual Access"
   about_page:
     title: "About DMP OPIDoR"
     # tab_1: "DMP OPIDoR"

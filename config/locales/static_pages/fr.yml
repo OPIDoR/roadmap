@@ -1,4 +1,7 @@
 fr:
+  helpers:
+    institution_sign_in: "Authentification institutionnelle"
+    classic_sign_in: "Authentification classique"
   about_page:
     title: "À propos de DMP OPIDoR"
     # tab_1: "DMP OPIDoR"

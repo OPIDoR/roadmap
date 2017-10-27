@@ -54,6 +54,28 @@
 				</div>
 				<div id="collapse-login" class="accordion-home collapse in">
 					<div class="accordion-inner">
+						<% if Rails.application.config.shibboleth_enabled %>
+				        <% if request.fullpath != "/users/sign_up?nosplash=true" && session[:shibboleth_data].nil? then%>
+
+                  <h2><%= t('helpers.institution_sign_in')%></h2>
+                  <ul>
+				            <li>
+											<%= link_to user_shibboleth_omniauth_authorize_path, :id => "institution_login", :class => "btn btn-primary" do %>
+                          <i class="icon-large icon-link icon-white"></i>
+                          <%= _('Sign in') %>
+                      <% end %>
+				            </li>
+									</ul>
+
+                  <hr/>
+                  <h3><%= t('helpers.classic_sign_in')%></h3>
+
+				        <%else%>
+				            <%= f.hidden_field :shibboleth_id, :value => session[:shibboleth_data][:uid] %>
+				        <%end%>
+				    <% end %>
+
+
 						<%= render :partial => 'shared/login_form' %>
 					</div>
 				</div>

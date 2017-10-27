@@ -1,5 +1,6 @@
 en_GB:
   helpers:
+    public_area_label: "Public Area"
     institution_sign_in: "Institutional Access"
     classic_sign_in: "Individual Access"
     sign_up_cil_message: "<p>The information collected that concerns you will be processed and is destined for the Inist-CNRS (UPS76) and the correspondent for Computing and Liberties (CIL). For the following goal: management of user accounts. The recipients of this data are the administrators of the Inist-CNRS. The duration of conservation of the data is 5 years following the last login.</p>

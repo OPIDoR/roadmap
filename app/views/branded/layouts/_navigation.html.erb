@@ -22,6 +22,9 @@
             <%= link_to _('Users'), admin_index_users_path, class: 'main_nav_last_li' %>
           </li>
       <% end %>
+      <li>
+					<%= link_to t("helpers.public_area_label"), plans_path, :class => "public_area"%>
+			</li>
     <% else %>
       <% if user_signed_in? %>
           <li <%= 'class=active' if isActivePage(plans_path) %>>
@@ -48,6 +51,20 @@
         <li <%= 'class=active' if isActivePage(help_path) %>>
           <%= link_to _('Help'), help_path %>
         </li>
+
+      <% if (current_user.can_org_admin? && !current_user.org_id.nil?) %>
+        <% if current_user.can_modify_org_details? && current_user.org.abbreviation.blank? %>
+          <li><%= link_to _("Admin area"), admin_show_org_path(current_user.org_id), class: "admin_area" %></li>
+        <% elsif  current_user.can_modify_templates?%>
+           <li><%= link_to _("Admin area"), admin_index_template_path(current_user.org_id), class: "admin_area" %></li>
+        <% elsif current_user.can_modify_guidance? %>
+           <li><%= link_to _("Admin area"), admin_index_guidance_path(current_user.org_id), class: "admin_area" %></li>
+         <% elsif current_user.can_modify_org_details? %>
+           <li><%= link_to _("Admin area"), admin_show_org_path(current_user.org_id), class: "admin_area" %></li>
+         <% elsif current_user.can_grant_permissions? %>
+           <li><%= link_to _("Admin area"), admin_index_users_path, class: "admin_area" %></li>
+         <% end %>
+      <% end %>
       <% if MANY_LANGUAGES %>
           <!-- language dropdown -->
           <li class="dropdown sign_in">

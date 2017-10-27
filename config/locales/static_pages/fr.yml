@@ -1,5 +1,6 @@
 fr:
   helpers:
+    public_area_label: "Section publique" 
     institution_sign_in: "Authentification institutionnelle"
     classic_sign_in: "Authentification classique"
     sign_up_cil_message: "<p>Les informations recueillies vous concernant vont faire l’objet d’un traitement destiné à l'Inist-CNRS (UPS76) et au correspondant Informatique et Libertés. Pour la finalité suivante : gestion des comptes des utilisateurs. Les destinataires de ces données sont les administrateurs DMP OPIDoR de l’Inist-CNRS. La durée de conservation des données est de 5 ans suite à la dernière connexion.</p>

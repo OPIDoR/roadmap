@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require owl.carousel
 //= require colorbox-rails
 //= require twitter/bootstrap
@@ -34,4 +35,9 @@ $(function() {
       paginationSpeed : 400,
       singleItem : true
      });
+  });
+
+
+  $(function() {
+  		$(".question_date_field").datepicker({ dateFormat: 'yy-mm-dd' });
   });

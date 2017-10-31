@@ -59,6 +59,7 @@ gem 'ledermann-rails-settings'
 gem 'sass-rails'
 gem 'less-rails'                        # WE SHOULD PROBABLY USE SASS OR LESS NOT BOTH
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'font-awesome-rails'
 gem 'twitter-bootstrap-rails', '2.2.8'
 gem 'tinymce-rails'                     # WYSIWYG EDITOR

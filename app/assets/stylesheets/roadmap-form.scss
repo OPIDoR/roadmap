@@ -54,6 +54,9 @@ form.roadmap-form {
     -moz-border-radius: 10px;
     border-radius: 10px;
 
+    display: flex;
+    flex-direction: column;
+
     label,
     input[type="checkbox"],
     .combobox-container,
@@ -72,6 +75,10 @@ form.roadmap-form {
     .checkbox-label {
       display: inline-block;
       margin-left: 5px;
+    }
+
+    input.form-submit {
+      width: 140px;
     }
   }
 
@@ -153,7 +160,6 @@ form.roadmap-form {
     color: $reverse-text;
     font-size: 14px;
     padding: 4px 12px;
-
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;

@@ -178,13 +178,14 @@ div.header_right{
     margin-right: 0px;
 }
 
-#main-nav-tabs li.active a, #main-nav-tabs li.active a:active, #main-nav-tabs li a:hover{
+#main-nav-tabs li.active a, #main-nav-tabs li.active a:active, #main-nav-tabs li a:hover, #main-nav-tabs .main_nav li .lang-dropdown-link:hover{
     background-color: @blue_colour;
     color: @white_colour !important;
     font-weight: bold;
     border: 1px solid @blue_colour;
     padding: 4px 15px 4px 15px;
     text-decoration: none !important;
+    background-image: none;
 }
 
 #main-nav-tabs li a.admin_area{
@@ -203,6 +204,11 @@ div.header_right{
     border: 1px solid @green_colour;
     padding: 4px 15px 4px 15px;
     text-decoration: none !important;
+}
+
+
+#main-nav-tabs .main_nav li .lang-dropdown-link {
+  margin-bottom: 0!important;
 }
 
 /********************/

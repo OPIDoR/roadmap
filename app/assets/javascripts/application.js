@@ -12,7 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui
+
+//= require jquery-ui/widgets/datepicker
+//= require jquery-ui/i18n/datepicker-de
+//= require jquery-ui/i18n/datepicker-fr
+
 //= require owl.carousel
 //= require colorbox-rails
 //= require twitter/bootstrap

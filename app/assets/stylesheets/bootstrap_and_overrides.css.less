@@ -209,6 +209,11 @@ div.header_right{
 
 #main-nav-tabs .main_nav li .lang-dropdown-link {
   margin-bottom: 0!important;
+  background-image: none;
+}
+
+#main-nav-tabs .main_nav .dropdown-menu{
+    z-index: 10;
 }
 
 /********************/
@@ -1045,9 +1050,9 @@ ol .choices-group{
 
     & > span:first-child  {
       height: 100%;
-      color: @grey_lighter_colour;
+      color: black;
       width: 100%;
-      z-index: 1000;
+      z-index: 2;
     }
 
     & > span {
@@ -1064,11 +1069,11 @@ ol .choices-group{
   }
 
   .bar {
-    .ProgressBar(@blue_lighter_colour, @blue_very_light_colour);
+    .ProgressBar(@blue_very_light_colour, @blue_very_light_colour);
   }
 
   .bar.space {
-    .ProgressBar(@blue_very_light_colour, @blue_lighter_colour);
+    .ProgressBar(@blue_very_light_colour, @blue_very_light_colour);
 
   }
 

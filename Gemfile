@@ -75,7 +75,7 @@ gem 'colorbox-rails'
 gem 'wkhtmltopdf-binary'
 gem 'thin'
 gem 'wicked_pdf'
-gem 'htmltoword'
+gem 'htmltoword', '>= 0.7'
 gem 'feedjira'
 gem 'yaml_db', :git => 'https://github.com/vyruss/yaml_db.git'
 

@@ -2,8 +2,8 @@
 
 one:
   level: MyString
-  text: MyString
+  text: MyText
 
 two:
   level: MyString
-  text: MyString
+  text: MyText

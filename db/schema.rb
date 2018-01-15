@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180115094657) do
+ActiveRecord::Schema.define(version: 20180115102544) do
 
   create_table "annotations", force: :cascade do |t|
     t.integer  "question_id", limit: 4
@@ -112,9 +112,9 @@ ActiveRecord::Schema.define(version: 20180115094657) do
 
   create_table "homepage_messages", force: :cascade do |t|
     t.string   "level",      limit: 255
-    t.string   "text",       limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.text     "text",       limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "identifier_schemes", force: :cascade do |t|

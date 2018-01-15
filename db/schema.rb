@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180112132112) do
+ActiveRecord::Schema.define(version: 20180115094657) do
 
   create_table "annotations", force: :cascade do |t|
     t.integer  "question_id", limit: 4
@@ -111,7 +111,7 @@ ActiveRecord::Schema.define(version: 20180112132112) do
   add_index "guidances", ["guidance_group_id"], name: "index_guidances_on_guidance_group_id", using: :btree
 
   create_table "homepage_messages", force: :cascade do |t|
-    t.integer  "level",      limit: 4
+    t.string   "level",      limit: 255
     t.string   "text",       limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false

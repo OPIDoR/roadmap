@@ -1,4 +1,4 @@
-require "administrate/base_dashboard"
+require 'administrate/base_dashboard'
 
 class HomepageMessageDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
@@ -10,7 +10,7 @@ class HomepageMessageDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     level: Field::Select.with_options(
-      collection: [1, 2, 3]
+      collection: %w[info warning error]
     ),
     text: Field::String,
     created_at: Field::DateTime,

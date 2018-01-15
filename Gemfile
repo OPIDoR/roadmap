@@ -16,7 +16,7 @@ gem 'responders', '~> 2.0'  # Allows use of respond_with and respond_to in contr
 # ------------------------------------------------
 #    DATABASE/SERVER
 gem 'mysql2', '~> 0.3.18'
-gem 'pg'
+#gem 'pg'
 gem 'flag_shih_tzu'  # Allows for bitfields in activereccord
 
 # ------------------------------------------------
@@ -59,6 +59,7 @@ gem 'ledermann-rails-settings'
 gem 'sass-rails'
 gem 'less-rails'                        # WE SHOULD PROBABLY USE SASS OR LESS NOT BOTH
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'font-awesome-rails'
 gem 'twitter-bootstrap-rails', '2.2.8'
 gem 'tinymce-rails'                     # WYSIWYG EDITOR
@@ -66,6 +67,8 @@ gem 'contact_us', '>= 1.2.0' # COULD BE EASILY REPLACED WITH OUR OWN CODE
 gem 'recaptcha', '>= 4.0'
 gem 'dragonfly'                         # LOGO UPLOAD
 gem 'formtastic'
+gem 'owlcarousel-rails'
+gem 'colorbox-rails'
 
 # ------------------------------------------------
 #     EXPORTING
@@ -131,4 +134,3 @@ end
 # gem 'email_validator'            # UNUSED ACTIVERECORD VALIDATOR
 # gem 'validate_url'               # UNUSED ACTIVERECORD VALIDATOR
 # gem 'turbolinks'                 # IS NOW A CORE PART OF RAILS >= 4.0
-

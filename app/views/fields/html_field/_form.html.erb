@@ -1,0 +1,8 @@
+<div class="field-unit__label">
+  <%= f.label field.attribute %>
+</div>
+<div class="field-unit__field">
+  <%= f.text_area field.attribute, class: "tinymce" %>
+  <%= tinymce_assets %>
+  <%= tinymce forced_root_block: '', toolbar: 'bold italic underline' %>
+</div>

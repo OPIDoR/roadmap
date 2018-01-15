@@ -12,7 +12,7 @@ class HomepageMessageDashboard < Administrate::BaseDashboard
     level: Field::Select.with_options(
       collection: %w[info warning error]
     ),
-    text: Field::String,
+    text: HtmlField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime
   }.freeze

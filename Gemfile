@@ -92,7 +92,7 @@ gem 'swagger-docs'
 
 # ------------------------------------------------
 #    CODE DOCUMENTATION
-gem 'yard'
+gem 'yard', '>= 0.9.11'
 gem 'redcarpet'
 
 

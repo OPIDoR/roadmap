@@ -15,7 +15,7 @@ as defined by the routes in the `admin/` namespace
 
   <% Administrate::Namespace.new(namespace).resources.each do |resource| %>
     <%# Hack to hide unnecessary models from sidebar %>
-    <% if ["users","orgs","perms","identifier_schemes","languages",].include? resource.to_s %> 
+    <% if ["users","orgs","perms","identifier_schemes","languages","homepage_messages"].include? resource.to_s %>
         <%= link_to(
           display_resource_name(resource),
           [namespace, resource.path],

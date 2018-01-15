@@ -56,8 +56,7 @@
 
 	</head>
 	<body class="dmpinist" >
-		<!--p class="alert alert-danger">The DMPRoadmap service will be down from 1600 BST (UTC+1) on Friday, 15th May 2015 to allow essential updates.  Please ensure you have saved your data and logged out before this time to avoid any problems.  We will be back again as soon as possible on Friday evening.</p-->
-	    <!--p class="alert alert-success">Our essential updates have been completed, and DMPRoadmap is up and running again. Many thanks for your patience.</p -->
+		<%= render 'homepage_messages/show', homepage_messages: HomepageMessage.all %>
 
 	    <!-- header renedering -->
 	    <%= render "layouts/header" %>

@@ -1,0 +1,38 @@
+defaults: &defaults
+  legal_entity: 'Centre National de la Recherche Scientifique'
+
+  organisation:
+    name: 'Institut de l''Information Scientifique et Technique'
+    abbreviation: 'INIST'
+    url: 'https://github.com/DMPRoadmap/roadmap/wiki'
+    copywrite_name: 'CNRS & BSN10'
+    email: 'info-opidor@inist.fr'
+    address_line1: 'Equipe Valorisation Données de la recherche - Inist-CNRS'
+    address_line1: '2, allée du parc de Brabois'
+    address_line3: 'CS 10310'
+    address_line4: 'F-54519 Vandoeuvre-lès-Nancy'
+    address_country: 'FRANCE'
+    telephone: '+33 (0) 383504632'
+    email: '&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;'
+    google_maps_link: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.6205514618828!2d6.147821815667206!3d48.65537377926815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794a20d2501f331%3A0x608225daeea2a8ae!2sInstitute+Information+Scientific+And+Technical+-+Inist+Cnrs!5e0!3m2!1sen!2sus!4v1470224717033'
+
+
+  application:
+    name: 'DMP OPIDoR'
+    url: 'https://github.com/DMPRoadmap/roadmap'
+    version: '0.3.5'
+    release_notes_url: 'https://github.com/OPIDoR/DMPOPIDoR'
+    issue_list_url: 'https://github.com/DMPRoadmap/roadmap/issues'
+    user_group_subscription_url: 'http://listserv.ucop.edu/cgi-bin/wa.exe?SUBED1=ROADMAP-L&A=1'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

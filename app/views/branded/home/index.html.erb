@@ -1,0 +1,101 @@
+<div class="content">
+	<div class="home_left_column">
+		<div class="welcome-message">
+
+			<h2><%= _('Welcome.')%></h2>
+			<%= raw _('<p>%{application_name} has been jointly developed by the <strong>%{organisation_name}</strong> to help you write data management plans.</p>') % {:application_name => Rails.configuration.branding[:application][:name], :organisation_name => Rails.configuration.branding[:organisation][:name]} %>
+			<div class="screencast_home_page">
+				<p><%= _('Screencast on how to use %{application_name}') % {:application_name => Rails.configuration.branding[:application][:name]} %></p>
+				<div class="clear"></div>
+				<div id="tutorials" class="tutorials">
+						<div class="item"><%= link_to image_tag("doranum-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#first-video", :colorbox_width => "70%", :colorbox_height => "auto" } %></div>
+						<div class="item"><%= link_to image_tag("1ere-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#second-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
+						<div class="item"><%= link_to image_tag("2eme-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#third-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
+						<div class="item"><%= link_to image_tag("3eme-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#fourth-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
+				</div>
+				<div style='display:none'>
+						<div id="first-video">
+								<video preload="metadata" controls="controls" class="video" width="100%" height="auto"  title="1662" >
+										<source src="<%= asset_path('index.files/html5video/doranum.mp4')%>" type="video/mp4" />
+								</video>
+								<%= link_to "DoRANum", "http://doranum.fr/outil-redaction-dmp-plan-gestion-donnees-dmp/", :target => "_blank"  %> / CC BY-NC-SA 2.0 FR
+						</div>
+				</div>
+				<div style='display:none'>
+						<div id="second-video">
+								<video preload="metadata" controls="controls" class="video" width="100%" height="auto"  title="1662">
+										<source src="<%= asset_path('index.files/html5video/1ere-scene.mp4')%>" type="video/mp4" />
+								</video>
+						</div>
+				</div>
+				<div style='display:none'>
+						<div id="third-video">
+								<video preload="metadata"  controls="controls" class="video" width="100%" height="auto"  title="1662">
+										<source src="<%= asset_path('index.files/html5video/2eme-scene.mp4')%>" type="video/mp4" />
+								</video>
+						</div>
+				</div>
+				<div style='display:none'>
+						<div id="fourth-video">
+								<video preload="metadata"  controls="controls" class="video" width="100%" height="auto"  title="1662">
+										<source src="<%= asset_path('index.files/html5video/3eme-scene.mp4')%>" type="video/mp4" />
+								</video>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home_right_column">
+		<div class="accordion" id="homepage-accordion">
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#homepage-accordion" href="#collapse-login">
+						<%= _('Sign in')%><span class="minus-laranja"> </span></a>
+				</div>
+				<div id="collapse-login" class="accordion-home collapse in">
+					<div class="accordion-inner">
+						<% if Rails.application.config.shibboleth_enabled %>
+				        <% if request.fullpath != "/users/sign_up?nosplash=true" && session[:shibboleth_data].nil? then%>
+
+                  <h2><%= t('helpers.institution_sign_in')%></h2>
+                  <ul>
+				            <li>
+											<%= link_to user_shibboleth_omniauth_authorize_path, :id => "institution_login", :class => "btn btn-primary" do %>
+                          <i class="icon-large icon-link icon-white"></i>
+                          <%= _('Sign in') %>
+                      <% end %>
+				            </li>
+									</ul>
+
+                  <hr/>
+                  <h3><%= t('helpers.classic_sign_in')%></h3>
+
+				        <%else%>
+				            <%= f.hidden_field :shibboleth_id, :value => session[:shibboleth_data][:uid] %>
+				        <%end%>
+				    <% end %>
+
+
+						<%= render :partial => 'shared/login_form' %>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#homepage-accordion" href="#collapse-register">
+						<%= _('Create account') %><span class="plus-laranja"> </span></a>
+					<p>
+						<%= _('New to %{application_name}? Create an account today.') % {:application_name => Rails.configuration.branding[:application][:name]} %>
+					</p>
+
+				</div>
+				<div id="collapse-register" class="accordion-home collapse">
+					<div class="accordion-inner">
+						<%= render :partial => 'shared/register_form', locals: {extended: false} %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="two-column-clear"></div>
+</div>

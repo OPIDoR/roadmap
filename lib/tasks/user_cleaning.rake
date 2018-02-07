@@ -17,11 +17,11 @@ namespace :usercleaning do
     User.where('last_sign_in_at < ?', 5.years.ago + 1.month).each do |user|
       case user.last_sign_in_at.to_date
       when (5.years.ago + 1.month).to_date
-        UserMailer.anonymization_warning(user).deliver
+        UserMailer.anonymization_warning(user).deliver_now
       when (5.years.ago + 1.week).to_date
-        UserMailer.anonymization_warning(user).deliver
+        UserMailer.anonymization_warning(user).deliver_now
       when (5.years.ago + 1.day).to_date
-        UserMailer.anonymization_warning(user).deliver
+        UserMailer.anonymization_warning(user).deliver_now
       when 5.years.ago.to_date
         user.anonymize
       end

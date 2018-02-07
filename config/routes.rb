@@ -24,6 +24,7 @@ Rails.application.routes.draw do
     resources :roles,              only: [:new, :create, :edit, :update, :index, :show]
     resources :splash_logs,        only: [:new, :create, :edit, :update, :index, :show]
     resources :user_identifiers,   only: [:new, :create, :edit, :update, :index, :show]
+    resources :homepage_messages,  only: [:new, :create, :edit, :update, :index, :show, :destroy]
 resources :token_permission_types, only: [:new, :create, :edit, :update, :index, :show]
 #resources :plans_guidance_groups
 

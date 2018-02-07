@@ -19,4 +19,5 @@
  *= require colorbox-rails
  *= require bootstrap_and_overrides.css.less
  *= require roadmap-form.scss
+ *= require homepage_messages.css
  */

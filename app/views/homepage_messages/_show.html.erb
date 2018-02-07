@@ -1,0 +1,5 @@
+<% homepage_messages.each do |m| %>
+  <p class="homepage_message alert alert-<%= m.level %>">
+    <%= m.text.html_safe %>
+  </p>
+<% end %>

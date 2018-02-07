@@ -293,4 +293,12 @@ class User < ActiveRecord::Base
   end
 =end
 
+# Anonymize a user (by removing its personnal data and deactivating its account)
+def anonymize
+  UserMailer.anonymization_notice(self).deliver
+
+  update(firstname: 'anonymous', surname: 'user', email: "anonymous#{id}@opidor.fr", last_sign_in_at: nil)
+
+  Rails.logger.info "User #{id} anonymized" if save
+end
 end

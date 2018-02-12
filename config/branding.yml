@@ -20,7 +20,7 @@ defaults: &defaults
   application:
     name: 'DMP OPIDoR'
     url: 'https://github.com/DMPRoadmap/roadmap'
-    version: '1.5.0_alpha01'
+    version: '1.5.0_alpha02'
     release_notes_url: 'https://github.com/OPIDoR/DMPOPIDoR'
     issue_list_url: 'https://github.com/DMPRoadmap/roadmap/issues'
     user_group_subscription_url: 'http://listserv.ucop.edu/cgi-bin/wa.exe?SUBED1=ROADMAP-L&A=1'

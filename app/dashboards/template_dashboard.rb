@@ -42,8 +42,7 @@ class TemplateDashboard < Administrate::BaseDashboard
     :description,
     :org,
     :plans,
-    :phases,
-    :sections,
+    :published
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES

@@ -7,7 +7,7 @@
         <% if !readonly %>
           <%= f.input :id, as: :hidden, input_html: { value: answer.id } %>
           <%= f.input :plan_id, as: :hidden, input_html: { value: answer.plan_id } %>
-          <%= f.input :user_id, as: :hidden, input_html: { value: answer.user_id } %>
+          <%= f.input :user_id, as: :hidden, input_html: { value: current_user.id } %>
           <%= f.input :question_id, as: :hidden, input_html: { value: answer.question_id } %>
           <%= f.input :lock_version, as: :hidden, input_html: { value: answer.lock_version } %>
         <% end %>
@@ -56,12 +56,12 @@
               <% end %>
             </ol>
           <% elsif q_format.dropdown? || q_format.multiselectbox? %>
-            <% 
+            <%
               options_html = ""
               options.each do |op|
                   options_html += answer.has_question_option(op.id) ?
                     "<option value=#{op.id} selected=\"selected\">#{op.text}</option>" :
-                    "<option value=#{op.id}>#{op.text}</option>" 
+                    "<option value=#{op.id}>#{op.text}</option>"
               end
             %>
               <%= select_tag('answer[question_option_ids]', raw(options_html),

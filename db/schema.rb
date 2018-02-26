@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180207135828) do
+ActiveRecord::Schema.define(version: 20180115102544) do
 
   create_table "annotations", force: :cascade do |t|
     t.integer  "question_id", limit: 4
@@ -109,6 +109,13 @@ ActiveRecord::Schema.define(version: 20180207135828) do
   end
 
   add_index "guidances", ["guidance_group_id"], name: "index_guidances_on_guidance_group_id", using: :btree
+
+  create_table "homepage_messages", force: :cascade do |t|
+    t.string   "level",      limit: 255
+    t.text     "text",       limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
   create_table "identifier_schemes", force: :cascade do |t|
     t.string   "name",             limit: 255
@@ -369,11 +376,11 @@ ActiveRecord::Schema.define(version: 20180207135828) do
   create_table "users", force: :cascade do |t|
     t.string   "firstname",              limit: 255
     t.string   "surname",                limit: 255
-    t.string   "email",                  limit: 255, default: "",   null: false
+    t.string   "email",                  limit: 255, default: "", null: false
     t.string   "orcid_id",               limit: 255
     t.string   "shibboleth_id",          limit: 255
-    t.datetime "created_at",                                        null: false
-    t.datetime "updated_at",                                        null: false
+    t.datetime "created_at",                                      null: false
+    t.datetime "updated_at",                                      null: false
     t.string   "encrypted_password",     limit: 255, default: ""
     t.string   "reset_password_token",   limit: 255
     t.datetime "reset_password_sent_at"
@@ -398,7 +405,6 @@ ActiveRecord::Schema.define(version: 20180207135828) do
     t.integer  "invited_by_id",          limit: 4
     t.string   "invited_by_type",        limit: 255
     t.integer  "language_id",            limit: 4
-    t.boolean  "active",                             default: true
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

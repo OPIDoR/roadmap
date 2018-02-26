@@ -56,7 +56,7 @@ class UserMailer < ActionMailer::Base
   def anonymization_notice(user)
     @user = user
     FastGettext.with_locale FastGettext.default_locale do
-      mail(to: @user.email, subject: "#{_('Account expriation in')} #{Rails.configuration.branding[:application][:name]}")
+      mail(to: @user.email, subject: "#{_('Account expired')} #{Rails.configuration.branding[:application][:name]}")
     end
   end
 end

@@ -7,7 +7,7 @@
         <% if !readonly %>
           <%= f.input :id, as: :hidden, input_html: { value: answer.id } %>
           <%= f.input :plan_id, as: :hidden, input_html: { value: answer.plan_id } %>
-          <%= f.input :user_id, as: :hidden, input_html: { value: answer.user_id } %>
+          <%= f.input :user_id, as: :hidden, input_html: { value: current_user.id } %>
           <%= f.input :question_id, as: :hidden, input_html: { value: answer.question_id } %>
           <%= f.input :lock_version, as: :hidden, input_html: { value: answer.lock_version } %>
         <% end %>

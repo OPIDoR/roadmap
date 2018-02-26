@@ -1,0 +1,13 @@
+<% FastGettext.with_locale FastGettext.default_locale do %>
+  <p><%= _('Hello ') %><%= @user.name %></p>
+
+  <p>
+    <%= _('You have not signed in since ') %><%= @user.last_sign_in_at.to_date %><%= _(' and our system will deactivate your account at ') %><%= @end_date %>.
+    <%= _('All accounts inactive for 5 years are automaticaly deactivated. If you want your account to remain active, please just sign in before ') %><%= @end_date %>.
+  </p>
+
+  <p>
+    <%=_('All the best,')%><br/>
+    <%= _('The ')%><%= Rails.configuration.branding[:application][:name] %><%=_(' team')%>.
+  </p>
+<% end %>

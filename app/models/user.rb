@@ -80,12 +80,7 @@ class User < ActiveRecord::Base
   # @param user_email [Boolean] defaults to true, allows the use of email if there is no firstname or surname
   # @return [String] the email or the firstname and surname of the user
   def name(use_email = true)
-    if (firstname.blank? && surname.blank?) || use_email then
-      return email
-    else
-      name = "#{firstname} #{surname}"
-      return name.strip
-    end
+    ("#{firstname} #{surname}".strip unless (firstname.blank? && surname.blank?) && use_email) || email
   end
 
   ##

@@ -37,7 +37,7 @@ Rails.application.configure do
   # Log error messages when you accidentally call methods on nil.
   config.whiny_nils = true
 
-  config.log_level = :debug
+  config.log_level = :warn
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin

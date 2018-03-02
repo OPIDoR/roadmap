@@ -6,6 +6,6 @@
     <ul>
         <li><p class= "accordion_label"><%= _('Noted by:')%></p></li>
         <li><%= user.name%> (<%= l note.updated_at, format: :custom %>)</li>
-        <li><%= raw note.text %></li>
+        <li class="note-text"><%= note.text.html_safe %></li>
     </ul>
 </div>

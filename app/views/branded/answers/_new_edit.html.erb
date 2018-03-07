@@ -83,7 +83,7 @@
           <% if readonly %>
             <p><%= strip_tags(answer.text) %></p>
           <% else %>
-            <%= text_field_tag('answer[text]', strip_tags(answer.text)) %>
+            <%= text_field_tag('answer[text]', strip_tags(answer.text), class: "question_text_field") %>
           <% end %>
         <% elsif q_format.textarea? %>
           <% if readonly %>
@@ -97,7 +97,7 @@
           <% if readonly %>
             <p><%= strip_tags(answer.text) %></p>
           <% else %>
-            <%= text_field_tag('answer[text]', strip_tags(answer.text), class: "question_date_field", placeholder: sanitize("&#x1f4c5;")) %>
+            <%= text_field_tag('answer[text]', strip_tags(answer.text), class: "question_date_field", placeholder: sanitize("&#x1f4c5;"), id: "answser-date-#{question.id}") %>
           <% end %>
         <% end %>
 

@@ -41,9 +41,9 @@ resources :token_permission_types, only: [:new, :create, :edit, :update, :index,
   end
 
   # WAYFless access point - use query param idp
-  #get 'auth/shibboleth' => 'users/omniauth_shibboleth_request#redirect', :as => 'user_omniauth_shibboleth'
-  #get 'auth/shibboleth/assoc' => 'users/omniauth_shibboleth_request#associate', :as => 'user_shibboleth_assoc'
-  #post '/auth/:provider/callback' => 'sessions#oauth_create'
+  get 'auth/shibboleth' => 'users/omniauth_shibboleth_request#redirect', :as => 'user_omniauth_shibboleth'
+  get 'auth/shibboleth/assoc' => 'users/omniauth_shibboleth_request#associate', :as => 'user_shibboleth_assoc'
+  post '/auth/:provider/callback' => 'sessions#oauth_create'
 
   # fix for activeadmin signout bug
   devise_scope :user do

@@ -1,3 +1,4 @@
+// Fix for DMP notes display (list bullets)
 .note-text {
   ul {
     list-style-type: initial;
@@ -5,7 +6,12 @@
   }
 }
 
-
+// Fix for DMP share submit button width
 #share-submit {
   width: auto;
+}
+
+// Fix for template details editor width
+.dmp_details_table, #template-desc {
+  width: 100%;
 }

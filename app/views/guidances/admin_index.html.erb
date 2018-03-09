@@ -78,7 +78,7 @@
 		<%= link_to _('Add guidance'),
 		            admin_new_guidance_path(),
 		            class: "btn btn-primary" %>
-	</div> 
+	</div>
 </div>
 
 <div class="div_clear"></div>
@@ -91,6 +91,7 @@
 	      	<th class="dmp_th_big"><%= _('Text') %></th>
 	      	<th class="dmp_th_small"><%= _('Themes') %></th>
 	      	<th class="dmp_th_small"><%= _('Guidance group') %></th>
+	      	<th class="dmp_th_small"><%= _('Published') %></th>
 			<th class="dmp_th_small"><%= _('Last updated') %></th>
 	      	<td class="dmp_th_medium"><%= _('Actions') %></td>
 	    </tr>
@@ -123,6 +124,9 @@
 			       </td>
 			    <% end %>
 		        <td class="dmp_td_small">
+		        	<%= guidance.published ? _('Yes') : _('No') %>
+		        </td>
+		        <td class="dmp_td_small">
 		        	<%= l guidance.updated_at.to_date, formats: :short %>
 		        </td>
 		        <td class="dmp_td_medium">
@@ -137,4 +141,3 @@
 	  </tbody>
 	</table>
 <% end %>
-

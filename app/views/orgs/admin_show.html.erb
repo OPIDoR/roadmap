@@ -37,7 +37,7 @@
       <% if @org.banner_text.present? then %>
 			<tr>
 				<td class="first"><%= _('Top banner text') %></td>
-				<td><%= raw @org.banner_text %></td>
+				<td class="banner-text"><%= @org.banner_text.html_safe %></td>
 			</tr>
 			<% end %>
 

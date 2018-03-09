@@ -14,3 +14,11 @@
 .large-editor {
   width: 100% !important;
 }
+
+// Fix for guidances text lists
+.banner-text {
+  li {
+    list-style-type: initial;
+    margin-left: 20px;
+  }
+}

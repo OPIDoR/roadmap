@@ -10,7 +10,15 @@
   width: auto;
 }
 
-// Editor width fix (for Guidances mostly)
+// Editor width fix (for guidances mostly)
 .large-editor {
   width: 100% !important;
+}
+
+// Fix for guidances text lists
+.guidance-text {
+  li {
+    list-style-type: initial;
+    margin-left: 20px;
+  }
 }

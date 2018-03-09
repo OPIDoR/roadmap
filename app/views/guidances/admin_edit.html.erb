@@ -24,9 +24,9 @@
 				<table class="dmp_details_table guidance_table">
 					<tr>
 						<td class="first"><%= _('Text') %></td>
-						<td class="tinymce">
+						<td class="tinymce large-editor">
 							<div class="div_left_icon_g">
-								<%= text_area_tag("guidance-text", @guidance.text, class: "tinymce") %>
+								<%= text_area_tag("guidance-text", @guidance.text, class: "tinymce large-editor") %>
 							</div>
 							<div class="div_right_icon_g">
 								<%= link_to( image_tag('help_button.png'), '#', "data-toggle": "popover", rel: "popover", 'data-html' => "true", 'data-content' => _('Enter your guidance here. You can include links where needed.'))%>

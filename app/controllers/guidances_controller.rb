@@ -7,7 +7,7 @@ class GuidancesController < ApplicationController
   def admin_index
     authorize Guidance
     @guidances = policy_scope(Guidance)
-    @guidances.sort! { |a, b| b.created_at <=> a.created_at }
+    @guidances.sort! { |a, b| b.updated_at <=> a.updated_at }
     @guidance_groups = GuidanceGroup.where(org_id: current_user.org_id)
   end
 

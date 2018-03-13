@@ -261,7 +261,7 @@ class TemplatesController < ApplicationController
       end
 
       @hash = @template.to_hash
-      render 'admin_template'
+      redirect_to admin_template_template_path
     end
   end
 

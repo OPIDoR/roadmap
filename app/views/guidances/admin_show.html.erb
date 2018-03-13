@@ -23,7 +23,7 @@
 		<table class="dmp_details_table">
 			<tr>
 				<td class="first"><%= _('Text') %></td>
-				<td><%= raw @guidance.text %></td>
+				<td class="guidance-text"><%= @guidance.text.html_safe %></td>
 			</tr>
 			<tr>
 				<td class="first"><%= _('Themes') %></td>

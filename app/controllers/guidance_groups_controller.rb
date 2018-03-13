@@ -47,9 +47,9 @@ class GuidanceGroupsController < ApplicationController
     @guidance_group = GuidanceGroup.find(params[:id])
     authorize @guidance_group
     @guidance_group.org_id = current_user.org_id
-    @guidance_group.published = true unless params[:save_publish].nil?
 
     if @guidance_group.update_attributes(params[:guidance_group])
+      @guidance_group.update(published: true) unless params[:save_publish].nil?
       redirect_to admin_index_guidance_path(params[:guidance_group]), notice: _('Guidance group was successfully updated.')
     else
       flash[:notice] = failed_update_error(@guidance_group, _('guidance group'))

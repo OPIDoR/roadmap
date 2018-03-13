@@ -37,10 +37,10 @@
             <td class="first"><%= _('Published') %></td>
             <td>
               <div class="div_left_icon_g">
-                <%= f.check_box :published %>
+                <%= f.check_box :published, disabled: !@guidance_group.guidances? %>
               </div>
               <div class="div_right_icon_g">
-                <!--%= link_to( image_tag('help_button.png'), '#', :class => 'guidance_group_subset_popover', :rel => "popover", 'data-html' => "true", 'data-content' => _('If the guidance is only meant for a subset of users e.g. those in a specific college or institute, check this box.  Users will be able to select to display this subset guidance when answering questions in the 'create plan' wizard.'))%-->
+                <%= link_to(image_tag('help_button.png'), '#', "data-toggle": "popover", rel: "popover", 'data-html' => "true", 'data-content' => _('You can only publish a guidance group if it has guidances.')) %>
               </div>
             </td>
           </tr>
@@ -63,9 +63,7 @@
 
         <div class="move_2_right">
           <%= f.submit _('Save'), class: 'btn btn-primary' %>
-          <% if @guidance_group.published == false then %>
-              <%= f.submit _('Publish'), name: "save_publish", class: "btn btn-primary" %>
-          <% end %>
+          <%= f.submit _('Publish'), name: "save_publish", disabled: !@guidance_group.guidances?, class: "btn btn-primary" unless @guidance_group.published %>
           <%= link_to _('Cancel'), :back, class: 'btn cancel' %>
         </div>
 

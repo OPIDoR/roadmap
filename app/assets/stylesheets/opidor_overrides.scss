@@ -17,11 +17,12 @@
 }
 
 // Fix for guidances text lists
-.guidance-text {
+.banner-text .guidance-text {
   li {
     list-style-type: initial;
     margin-left: 20px;
   }
+}
 // Fix for template details editor width
 .dmp_details_table, #template-desc {
   width: 100%;

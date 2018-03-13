@@ -48,7 +48,7 @@
 
 				<tr>
 					<td class="first"><%= _('Top banner text') %></td>
-					<td><%= text_area_tag("org_banner_text", @org.banner_text, class: "tinymce") %></td>
+					<td class="large-editor"><%= text_area_tag("org_banner_text", @org.banner_text, class: "tinymce large-editor") %></td>
 				</tr>
 
 				<tr>
@@ -80,4 +80,3 @@
 </div>
 
 <%= tinymce :content_css => asset_path('application.css') %>
-

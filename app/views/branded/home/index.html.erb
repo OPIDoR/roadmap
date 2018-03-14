@@ -7,13 +7,12 @@
 			<div class="screencast_home_page">
 				<p><%= _('Screencast on how to use %{application_name}') % {:application_name => Rails.configuration.branding[:application][:name]} %></p>
 				<div class="clear"></div>
-					<video preload="metadata" poster="<%= asset_path('doranum-scene.png')%>" controls="controls" class="video" width="100%" height="auto"  title="1662" >
-						<source src="<%= asset_path('index.files/html5video/doranum.mp4')%>" type="video/mp4" />
-					</video>
-					<%= link_to "DoRANum", "http://doranum.fr/outil-redaction-dmp-plan-gestion-donnees-dmp/", :target => "_blank"  %> / CC BY-NC-SA 2.0 FR
-			
-		
-		</video>
+				<video preload="metadata" poster="<%= asset_path('doranum-scene.png')%>" controls="controls" class="video" width="100%" height="auto"  title="1662" >
+					<source src="<%= asset_path('index.files/html5video/doranum.mp4')%>" type="video/mp4" />
+				</video>
+				<%= link_to "DoRANum", "http://doranum.fr/outil-redaction-dmp-plan-gestion-donnees-dmp/", :target => "_blank"  %> / CC BY-NC-SA 2.0 FR
+	
+			</div>
 		</div>
 	</div>
 	<div class="home_right_column">

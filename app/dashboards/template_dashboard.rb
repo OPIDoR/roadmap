@@ -41,7 +41,6 @@ class TemplateDashboard < Administrate::BaseDashboard
     :title,
     :description,
     :org,
-    :plans,
     :published
   ].freeze
 
@@ -49,13 +48,7 @@ class TemplateDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :org,
-    :plans,
-    :phases,
-    :sections,
-    :questions,
-    :customizations,
     :dmptemplate,
-    :setting_objects,
     :id,
     :title,
     :description,
@@ -70,6 +63,11 @@ class TemplateDashboard < Administrate::BaseDashboard
     :dmptemplate_id,
     :migrated,
     :dirty,
+    :plans,
+    :phases,
+    :sections,
+    :questions,
+    :customizations,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -77,13 +75,7 @@ class TemplateDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :org,
-    :plans,
-    :phases,
-    :sections,
-    :questions,
-    :customizations,
     :dmptemplate,
-    :setting_objects,
     :title,
     :description,
     :published,
@@ -95,12 +87,17 @@ class TemplateDashboard < Administrate::BaseDashboard
     :dmptemplate_id,
     :migrated,
     :dirty,
+    :plans,
+    :phases,
+    :sections,
+    :questions,
+    :customizations,
   ].freeze
 
   # Overwrite this method to customize how templates are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(template)
-  #   "Template ##{template.id}"
-  # end
+  def display_resource(template)
+    template.title
+  end
 end

@@ -10,7 +10,7 @@ class UserDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     invited_by: Field::Polymorphic,
     perms: Field::HasMany,
-    language: Field::BelongsTo,
+    language: Field::BelongsTo ,
     org: Field::BelongsTo,
     answers: Field::HasMany,
     notes: Field::HasMany,
@@ -59,8 +59,7 @@ class UserDashboard < Administrate::BaseDashboard
     :surname,
     :email,
     :org,
-    :perms,
-    :confirmed_at,
+    :current_sign_in_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -75,11 +74,6 @@ class UserDashboard < Administrate::BaseDashboard
     :id,
     :invited_by,
     :language,
-    :answers,
-    :notes,
-    :exported_plans,
-    :roles,
-    :plans,
     :user_identifiers,
     :identifier_schemes,
     :orcid_id,
@@ -104,6 +98,11 @@ class UserDashboard < Administrate::BaseDashboard
     :other_organisation,
     :accept_terms,
     :api_token,
+    :answers,
+    :notes,
+    :exported_plans,
+    :roles,
+    :plans,
   ].freeze
 
   # FORM_ATTRIBUTES

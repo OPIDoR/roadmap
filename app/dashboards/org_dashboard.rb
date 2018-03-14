@@ -41,9 +41,6 @@ class OrgDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :name,
     :abbreviation,
-    :language,
-    :guidance_groups,
-#    :templates,
     :contact_email,
     :org_type,
   ].freeze
@@ -58,7 +55,6 @@ class OrgDashboard < Administrate::BaseDashboard
 #    :templates,
     :contact_email,
     :org_type,
-    :users,
     :annotations,
     :token_permission_types,
     :id,
@@ -74,6 +70,7 @@ class OrgDashboard < Administrate::BaseDashboard
     :region_id,
     :logo_uid,
     :logo_name,
+    :users,
   ].freeze
 
   # FORM_ATTRIBUTES

@@ -41,27 +41,15 @@ class PlanDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
+    :title,
     :template,
-    :phases,
-    :sections,
-    :questions,
+    :principal_investigator,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :template,
-    :phases,
-    :sections,
-    :questions,
-    :themes,
-    :answers,
-    :notes,
-    :roles,
-    :users,
-    :guidance_groups,
-    :exported_plans,
-    :setting_objects,
     :id,
     :title,
     :created_at,
@@ -75,13 +63,6 @@ class PlanDashboard < Administrate::BaseDashboard
     :data_contact,
     :funder_name,
     :visibility,
-  ].freeze
-
-  # FORM_ATTRIBUTES
-  # an array of attributes that will be displayed
-  # on the model's form (`new` and `edit`) pages.
-  FORM_ATTRIBUTES = [
-    :template,
     :phases,
     :sections,
     :questions,
@@ -92,7 +73,13 @@ class PlanDashboard < Administrate::BaseDashboard
     :users,
     :guidance_groups,
     :exported_plans,
-    :setting_objects,
+  ].freeze
+
+  # FORM_ATTRIBUTES
+  # an array of attributes that will be displayed
+  # on the model's form (`new` and `edit`) pages.
+  FORM_ATTRIBUTES = [
+    :template,
     :title,
     :slug,
     :grant_number,
@@ -103,6 +90,16 @@ class PlanDashboard < Administrate::BaseDashboard
     :data_contact,
     :funder_name,
     :visibility,
+    :phases,
+    :sections,
+    :questions,
+    :themes,
+    :answers,
+    :notes,
+    :roles,
+    :users,
+    :guidance_groups,
+    :exported_plans,
   ].freeze
 
   # Overwrite this method to customize how plans are displayed

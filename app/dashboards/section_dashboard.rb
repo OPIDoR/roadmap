@@ -28,7 +28,6 @@ class SectionDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :phase,
-    :organisation,
     :questions,
     :id,
   ].freeze
@@ -37,8 +36,6 @@ class SectionDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :phase,
-    :organisation,
-    :questions,
     :id,
     :title,
     :description,
@@ -47,6 +44,7 @@ class SectionDashboard < Administrate::BaseDashboard
     :updated_at,
     :published,
     :modifiable,
+    :questions,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -54,13 +52,12 @@ class SectionDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :phase,
-    :organisation,
-    :questions,
     :title,
     :description,
     :number,
     :published,
     :modifiable,
+    :questions,
   ].freeze
 
   # Overwrite this method to customize how sections are displayed

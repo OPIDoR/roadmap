@@ -7,42 +7,13 @@
 			<div class="screencast_home_page">
 				<p><%= _('Screencast on how to use %{application_name}') % {:application_name => Rails.configuration.branding[:application][:name]} %></p>
 				<div class="clear"></div>
-				<div id="tutorials" class="tutorials">
-						<div class="item"><%= link_to image_tag("doranum-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#first-video", :colorbox_width => "70%", :colorbox_height => "auto" } %></div>
-						<div class="item"><%= link_to image_tag("1ere-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#second-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
-						<div class="item"><%= link_to image_tag("2eme-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#third-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
-						<div class="item"><%= link_to image_tag("3eme-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#fourth-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
-				</div>
-				<div style='display:none'>
-						<div id="first-video">
-								<video preload="metadata" controls="controls" class="video" width="100%" height="auto"  title="1662" >
-										<source src="<%= asset_path('index.files/html5video/doranum.mp4')%>" type="video/mp4" />
-								</video>
-								<%= link_to "DoRANum", "http://doranum.fr/outil-redaction-dmp-plan-gestion-donnees-dmp/", :target => "_blank"  %> / CC BY-NC-SA 2.0 FR
-						</div>
-				</div>
-				<div style='display:none'>
-						<div id="second-video">
-								<video preload="metadata" controls="controls" class="video" width="100%" height="auto"  title="1662">
-										<source src="<%= asset_path('index.files/html5video/1ere-scene.mp4')%>" type="video/mp4" />
-								</video>
-						</div>
-				</div>
-				<div style='display:none'>
-						<div id="third-video">
-								<video preload="metadata"  controls="controls" class="video" width="100%" height="auto"  title="1662">
-										<source src="<%= asset_path('index.files/html5video/2eme-scene.mp4')%>" type="video/mp4" />
-								</video>
-						</div>
-				</div>
-				<div style='display:none'>
-						<div id="fourth-video">
-								<video preload="metadata"  controls="controls" class="video" width="100%" height="auto"  title="1662">
-										<source src="<%= asset_path('index.files/html5video/3eme-scene.mp4')%>" type="video/mp4" />
-								</video>
-						</div>
-				</div>
-			</div>
+					<video preload="metadata" poster="<%= asset_path('doranum-scene.png')%>" controls="controls" class="video" width="100%" height="auto"  title="1662" >
+						<source src="<%= asset_path('index.files/html5video/doranum.mp4')%>" type="video/mp4" />
+					</video>
+					<%= link_to "DoRANum", "http://doranum.fr/outil-redaction-dmp-plan-gestion-donnees-dmp/", :target => "_blank"  %> / CC BY-NC-SA 2.0 FR
+			
+		
+		</video>
 		</div>
 	</div>
 	<div class="home_right_column">

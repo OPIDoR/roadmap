@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-	default from: Rails.configuration.branding[:organisation][:email]
+	default from: 'info-opidor@inist.fr'
 
   def welcome_notification(user)
     @user = user

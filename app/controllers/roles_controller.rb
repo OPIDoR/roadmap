@@ -20,7 +20,8 @@ class RolesController < ApplicationController
           if user.nil?
             registered = false
             User.invite!(email: params[:user])
-            message = _('Invitation to %{email} issued successfully. \n') % {email: params[:user]}
+            message = _('Invitation to %{email} issued successfully.') % {email: params[:user]}
+            message += '<br/>'
             user = User.find_by(email: params[:user])
           end
           message += _('Plan shared with %{email}.') % {email: user.email}

@@ -6,6 +6,6 @@
   <p>
     <%=_('All the best,')%>
     <br />
-    <%= _('The ')%><%= Rails.configuration.branding[:application][:name] %><%=_(' team')%>.
+    <%= _('The %{application_name} team') % { application_name: Rails.configuration.branding[:application][:name] }%>
   </p>
 <% end %>

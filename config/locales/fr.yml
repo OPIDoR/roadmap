@@ -301,19 +301,19 @@ fr:
     remember_me: "Se souvenir de moi"
     org_not_listed: "Mon établissement nest pas listé."
 
-    mot de passe: "Mot de passe"
-    current_mot de passe: "Mot de passe actuel"
-    new_mot de passe: "Nouveau mot de passe"
-    mot de passe_conf: "Confirmez le mot de passe"
-    change_mot de passe: "Changez votre mot de passe"
-    forgot_mot de passe: "Mot de passe oublié?"
-    mot de passe_too_small: "Votre mot de passe doit contenir 8 caractères minimum."
-    mot de passe_no_match: "Ce que vous avez saisi doit être identique à ce que vous avez entré dans le champ précédent."
+    password: "Mot de passe"
+    current_password: "Mot de passe actuel"
+    new_password: "Nouveau mot de passe"
+    password_conf: "Confirmez le mot de passe"
+    change_password: "Changez votre mot de passe"
+    forgot_password: "Mot de passe oublié ?"
+    password_too_small: "Votre mot de passe doit contenir 8 caractères minimum."
+    password_no_match: "Ce que vous avez saisi doit être identique à ce que vous avez entré dans le champ précédent."
     no_pass_instructions: "Instructions de confirmation non reçues ?"
     no_unlock_instructions: "Instructions de déverrouillage non reçues ?"
-    send_mot de passe_info: "Instructions pour réinitialiser le mot de passe"
+    send_password_info: "Instructions pour réinitialiser le mot de passe"
     accept_terms_html: " Jaccepte les <a href=\"/terms\" target=\"_blank\">Conditions générales dutilisation.</a> *"
-    edit_mot de passe_info: "Si vous voulez changer de mot de passe, remplissez les champs suivants."
+    edit_password_info: "Si vous voulez changer de mot de passe, remplissez les champs suivants."
 
     text_area: "Zone de texte"
     text_field: "Champ textuel"
@@ -531,7 +531,7 @@ Sélectionnez votre format et cliquez sur Exporter.</p>"
         data_contact: "Interlocuteur pour les données du plan"
         description: "Description"
         visibility: "Visibilité"
-        name: 'Prénom'
+        name: 'Nom'
         template: 'Modèle'
         organisation: 'Organisation'
       filter:

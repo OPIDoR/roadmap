@@ -76,11 +76,12 @@ class PlansController < ApplicationController
 
         elsif !@plan.template.customization_of.nil?
           # We used a customized version of the the funder template
-          msg += "#{_('This plan is based on the')} #{plan_params[:funder_name]} #{_('template with customisations by the')} #{plan_params[:org_name]}"
+          msg += "#{_('This plan is based on the %{funder_name} template with customisations by the %{org_name}') % { funder_name: plan_params[:funder_name], org_name: plan_params[:org_name] }}"
 
         else
           # We used the specified org's or funder's template
-          msg += "#{_('This plan is based on the')} #{@plan.template.org.name} template."
+          msg += "#{_('This plan is based on the %{template_org_name} template') % { template_org_name: @plan.template.org.name }} "
+          
         end
 
         flash[:notice] = msg

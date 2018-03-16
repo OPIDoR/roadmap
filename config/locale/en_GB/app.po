@@ -211,8 +211,8 @@ msgid ""
 msgstr "%{application_name}"
 
 #, fuzzy
-msgid "A Data Management Plan in %{application_name} has been shared with you"
-msgstr "%{application_name}"
+msgid "A Data Management Plan in %{application_name} has been shared with you by %{user_name}"
+msgstr "A Data Management Plan in %{application_name} has been shared with you by %{user_name}"
 
 msgid "A colleague has invited you to contribute to their Data Management Plan at "
 msgstr "A colleague has invited you to contribute to their Data Management Plan at "
@@ -1511,7 +1511,7 @@ msgstr "You are viewing a historical version of this template. You will not be a
 
 #, fuzzy
 msgid "You can add an example answer to help users respond. These will be presented above the answer box and can be copied/ pasted."
-msgstr "You can add an example or suggested answer to help users respond. These will be presented above the answer box and can be copied/ pasted."
+msgstr "You can add an example answer to help users respond. These will be presented above the answer box and can be copied/ pasted."
 
 msgid "You can add an example or suggested answer to help users respond. These will be presented above the answer box and can be copied/ pasted."
 msgstr "You can add an example or suggested answer to help users respond. These will be presented above the answer box and can be copied/ pasted."
@@ -1760,3 +1760,81 @@ msgstr "user"
 #, fuzzy
 msgid "user must be in your organisation"
 msgstr "organisation"
+
+msgid "The \"%{template_title}\" %{is_generic_template} provided by %{template_organisation_name}."
+msgstr "The \"%{template_title}\" %{is_generic_template} provided by %{template_organisation_name}."
+
+msgid "A version of  "%{based_on_title}" %{based_on_include_template} that has been customised by  %{template_organisation_name}."
+msgstr "A version of  "%{based_on_title}" %{based_on_include_template} that has been customised by  %{template_organisation_name}."
+
+msgid "Yes (with %{shared_num} people)"
+msgstr "Yes (with %{shared_num} people)"
+
+msgid "Plan was successfully created."
+msgstr "Plan was successfully created."
+
+msgid "This plan is based on the %{template_org_name} template"
+msgstr "This plan is based on the %{template_org_name} template"
+
+msgid "This plan is based on the %{funder_name} template with customisations by the %{org_name}"
+msgstr "This plan is based on the %{funder_name} template with customisations by the %{org_name}"
+
+msgid "Could not create your %{o}."
+msgstr "Could not create your %{o}."
+
+msgid "Could not update your %{o}."
+msgstr "Could not update your %{o}."
+
+msgid "Could not delete the %{o}."
+msgstr "Could not delete the %{o}."
+
+msgid "Link account with %{scheme_description} ID"
+msgstr "Link account with %{scheme_description} ID"
+
+msgid "Your account has been linked to %{scheme_description}."
+msgstr "Your account has been linked to %{scheme_description}."
+
+msgid "Unlink your account from %{scheme_description}. You can link again at any time."
+msgstr "Unlink your account from %{scheme_description}. You can link again at any time."
+
+msgid "Are you sure you want to unlink %{scheme_description} ID?"
+msgstr "Are you sure you want to unlink %{scheme_description} ID?"
+
+msgid "Export Settings"
+msgstr "Export Settings"
+
+msgid "The %{application_name} team"
+msgstr "The %{application_name} team"
+
+msgid "%{user_name} has invited you to contribute to their Data Management Plan at %{root_url}"
+msgstr "%{user_name} has invited you to contribute to their Data Management Plan at %{root_url}"
+
+msgid "You have been given \"%{access_level}\" access to"
+msgstr "You have been given \"%{access_level}\" access to"
+
+msgid "co-owner"
+msgstr "co-owner"
+
+msgid "editor"
+msgstr "editor"
+
+msgid "read-only"
+msgstr "read-only"
+
+msgid "Permissions removed on a DMP in"
+msgstr "Permissions removed on a DMP in"
+
+msgid "Changed permissions on a DMP in"
+msgstr "Changed permissions on a DMP in"
+
+msgid "You now have %{access_level} access."
+msgstr ""
+
+msgid "This means you can read the plan and leave comments."
+msgstr "This means you can read the plan and leave comments."
+
+msgid "This means you can write and edit the plan in a collaborative manner."
+msgstr "This means you can write and edit the plan in a collaborative manner."
+
+msgid "This means you can write and edit the plan in a collaborative manner. You can also grant rights to other collaborators."
+msgstr "This means you can write and edit the plan in a collaborative manner. You can also grant rights to other collaborators."

@@ -58,7 +58,7 @@ fr:
       update_needs_confirmation: "Votre compte a bien été mis à jour, mais nous devons vérifier votre nouvelle adresse électronique. Vérifiez vos courriels et cliquez sur le lien de confirmation pour finaliser la validation de votre nouvelle adresse électronique."
       updated: "Votre compte a bien été modifié."
     sessions:
-      signed_in: "Connecté"
+      signed_in: "Vous êtes bien connecté."
       signed_out: "Déconnecté"
     unlocks:
       send_instructions: "Vous recevrez dans quelques minutes un courriel contenant les directives pour déverrouiller votre compte."

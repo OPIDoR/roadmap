@@ -1,11 +1,12 @@
 class UserMailer < ActionMailer::Base
-	default from: Rails.configuration.branding[:organisation][:email]
+	default from: 'info-opidor@inist.fr'
 
   def welcome_notification(user)
     @user = user
     FastGettext.with_locale FastGettext.default_locale do
       mail(to: @user.email,
-           subject: "#{_('Welcome to')} #{Rails.configuration.branding[:application][:name]}")
+           subject: _('Welcome to %{application_name}') % { application_name: Rails.configuration.branding[:application][:name] }
+           )
     end
   end
 
@@ -14,7 +15,12 @@ class UserMailer < ActionMailer::Base
     @user = user
     FastGettext.with_locale FastGettext.default_locale do
   		mail(to: @role.user.email,
-           subject: "#{_('A Data Management Plan in ')} #{Rails.configuration.branding[:application][:name]} #{_(' has been shared with you')}")
+           subject: _('A Data Management Plan in %{application_name} has been shared with you by %{user_name}') % 
+           { 
+             application_name: Rails.configuration.branding[:application][:name],
+             user_name: @user.name
+            }
+      )
     end
 	end
 

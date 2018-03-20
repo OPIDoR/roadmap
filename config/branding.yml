@@ -4,8 +4,8 @@ defaults: &defaults
   organisation:
     name: 'Institut de l''Information Scientifique et Technique'
     abbreviation: 'INIST'
-    url: 'https://github.com/DMPRoadmap/roadmap/wiki'
-    copywrite_name: 'CNRS & BSN10'
+    url: 'http://www.cnrs.fr/'
+    copywrite_name: 'CNRS'
     email: 'info-opidor@inist.fr'
     address_line1: 'Equipe Valorisation Données de la recherche - Inist-CNRS'
     address_line1: '2, allée du parc de Brabois'

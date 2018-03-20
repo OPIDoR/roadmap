@@ -1,46 +1,46 @@
 fr:
   helpers:
     public_area_label: "Section publique" 
-    institution_sign_in: "Authentification institutionnelle"
-    classic_sign_in: "Authentification classique"
+    institution_sign_in: "Accès institutionnel"
+    classic_sign_in: "Accès individuel"
     sign_up_cil_message: "<p>Les informations recueillies vous concernant vont faire l’objet d’un traitement destiné à l'Inist-CNRS (UPS76) et au correspondant Informatique et Libertés. Pour la finalité suivante : gestion des comptes des utilisateurs. Les destinataires de ces données sont les administrateurs DMP OPIDoR de l’Inist-CNRS. La durée de conservation des données est de 5 ans suite à la dernière connexion.</p>
                           <p>Vous bénéficiez d’un droit d’accès, de rectification, de portabilité, d’effacement de celles-ci ou une limitation du traitement. Vous pouvez vous opposer au traitement des données vous concernant et disposez du droit de retirer votre consentement à tout moment en vous adressant à <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>. Vous avez la possibilité d’introduire une réclamation auprès d’une autorité de contrôle.</p>"
 
   about_page:
-    title: "À propos de DMP OPIDoR"
+    title: "A propos de DMP OPIDoR"
     # tab_1: "DMP OPIDoR"
     # tab_2: "Dernières nouvelles"
     # une page unique encadrée
 
-    body_text_html: "<div class='white_background'><p>Un plan de gestion de données (DMP) est un document qui spécifie quelle donnée doit être collectée ou générée, comment celle-ci doit être gérée, partagée et préservée pendant et après le projet. La préparation d'un plan est une bonne pratique pour tout projet de recherche générant des données. Par ailleurs, les organismes et les institutions de financement exigent de plus en plus de leurs chercheurs la production de DMPs.</p><p>DMP OPIDoR est un outil d'aide à la rédaction de DMP</p><p>DMP OPIDoR est basé sur le code de l'outil <a href='https://dmponline.dcc.ac.uk/' target='_blank'>DMPonline</a> developpé par l'organisme anglais <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a> (DCC). Le code source de DMP OPIDoR est dérivé du code de DMPonline, il est disponible sur <a href='https://github.com/OPIDoR/DMPonline_v4' target=' blank'>GitHub</a>. DMP OPIDoR a été personnalisé pour les chercheurs français.</p></br>
+    body_text_html: "<div class='white_background'><p>Un plan de gestion de données (DMP) est un document qui spécifie quelles données sont collectées ou générées, comment celles-ci sont gérées, partagées et préservées pendant et après le projet. L'élaboration d'un plan de gestion est une bonne pratique pour tout projet de recherche générant des données. Par ailleurs, les organismes de financement et les institutions exigent de plus en plus de leurs chercheurs la production de DMPs.</p><p>DMP OPIDoR est un outil d'aide à la rédaction de DMP</p><p>DMP OPIDoR est basé sur le code de l'outil <a href='https://dmponline.dcc.ac.uk/' target='_blank'>DMPonline</a> developpé par l'organisme anglais <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a> (DCC). Le code source de DMP OPIDoR est dérivé du code de DMPonline, il est disponible sur <a href='https://github.com/OPIDoR/DMPOPIDoR' target=' blank'>GitHub</a>. DMP OPIDoR a été personnalisé pour les chercheurs français.</p></br>
       <h3>Fonctionnement de l'outil</h3>
-      <p>DMP OPIDoR comprend un certain nombre de modèles qui sont représentatifs des prescriptions de différents organismes financeurs et d'établissements. Au départ, les utilisateurs doivent répondre à trois questions pour que nous puissions déterminer le modèle qu'il convient d'afficher(par ex. : le modèle ESRC pour une soumission dans le cadre d'un appel à projet de l'ESRC). Des recommandations vous sont fournies pour vous permettre d'interpréter les questions posées et d'y répondre. Ces recommandations sont fournies selon les agences de financement, les universités et les disciplines.</p>
-      <p>Des conseils sont fournis pour vous aider à interpréter et à répondre aux questions. Ces recommandations sont fournies par les financeurs, les organismes de recherche, les universités, les disciplines et du Digital Curation Centre. Les directives DCC sont listées dans le document suivant: <a target='_blank' href='http://www.dcc.ac.uk/webfm_send/1703'>'Using the DMPonline admin interface: a guide to customising the tool'</a> par Jones S. et le DCC (Licence CC-BY).</p>
+      <p>DMP OPIDoR propose un certain nombre de modèles répondant aux exigences d'organismes de financement et d'institutions. Au départ, les utilisateurs doivent répondre à trois questions pour que nous puissions déterminer le modèle qu'il convient d'afficher. Des recommandations vous sont fournies pour vous permettre d'interpréter et de répondre aux questions. Ces recommandations sont proposées par les agences de financement, les institutions et les disciplines.</p>
+      <p>Les recommandations du Digital Curation Centre (DCC) sont issues du document suivant: <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/publications/DMP-themes.pdf'>'Data Management Planning themes'</a> du DCC.</p>
       <h3>Pour commencer...</h3>
       <p>En l'absence de compte DMP OPIDoR, cliquez sur <a href='/'>'Créer un compte'</a> en page d'accueil.</p>
       <p>Si vous avez un compte, s'il vous plait connectez vous :</p>
       <ul>
-        <li>- à l'aide de votre compte institutionnel. Votre compte DMP OPIDor sera lié à votre compte institutionnel.</li>
-        <li>- ou à l'aide de votre compte individuel.</li>
+        <li>- par l'accès institutionnel. Votre compte DMP OPIDoR sera lié à votre compte institutionnel.</li>
+        <li>- ou par l'accès individuel.</li>
       </ul>
-      <p>Et vous pouvez commencer à créer ou modifier votre plan de gestion des données.</p>
+      <p>Vous pouvez commencer à créer ou modifier votre plan de gestion des données.</p>
       <p>Visitez la page d'<a href='/help'>'Aide'</a> pour quelques conseils.</p>
       <h3>Autres informations</h3>
-      <p>Nous améliorons constamment l'interface utilisateur de DMP OPIDoR et ses fonctionnalités.
-      <p>Si vous souhaitez apporter une contribution par un retour ou des suggestions, veuillez nous contacter par courriel : <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p><br/>
+      <p>Nous améliorons constamment l'interface utilisateur de DMP OPIDoR et ses fonctionnalités. Si vous souhaitez apporter une contribution par un retour ou des suggestions, veuillez nous contacter par courriel : <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p><br/>
       <h3>Personnaliser DMP OPIDoR</h3>
-      <p>DMP OPIDoR peut être personnalisé par institutions et disciplines. Vous pouvez ajouter des modéles et des conseils pour les utilisateurs de votre organisme expliquant les différentes supports et services offerts par l'outil. Des exemples de réponses peuvent être proposés afin d'aider les utilisateurs à écrire leur plan de gestion des données. Pour ce faire vous aurez besoin de demander l'accés administrateur, donc s'il vous plait contactez nous à cette adresse <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p></div><br/>"
+      <p>DMP OPIDoR peut être personnalisé par institutions et disciplines. Vous pouvez ajouter des modéles et des conseils pour les utilisateurs de votre organisme leur indiquant les différents supports et services proposés. Des exemples de réponses peuvent être ajoutés afin d'aider les utilisateurs à rédiger leur plan de gestion de données. Pour ce faire vous devrez demander l'accés administrateur en nous contactant à cette adresse <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p></div><br/>"
 
 
   help_page:
     title: "Aide"
     tab_1: "À propos de DMP OPIDoR"
     tab_2: "Ressources, exemples et conseils"
-    body_text_tab_2_html: "<h3>Ressources utiles pour rédiger un DMP</h3>
+    body_text_tab_2_html: "<h3>Ressources utiles pour rédiger un Data ou un Software Management Plan</h3>
       <ul class='help_ul'>
         <li>
-          <a target='_blank' href='http://www.parisdescartes.fr/content/download/25025/146514/file/Realiser_un_DMP_V1.pdf'>Réaliser un plan de gestion de données</a> [PDF, 30 pages]<br />
-          <i>Cartier A., Moysan M., Reymonet N. 2015. Université Paris Diderot et Université Paris Descartes.</i>
+          <a target='_blank' https://archivesic.ccsd.cnrs.fr/sic_01690547/document'>Réaliser un plan de gestion de données</a> [PDF, 33 pages]<br />
+          <i>
+Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et Université Paris Descartes. 2018. Ce document a pour vocation d’accompagner les chercheurs et chargés de projets dans la rédact.. 2018. <sic_01690547v2</i>
         </li>
         <li>
           <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5435/40362/version/4/file/CoopIST-plan-gestion-donnees-recherche-20140717.pdf'>Découvrir des plans de gestion de données de la recherche, en 4 points</a> [PDF, 6 pages]<br />
@@ -51,6 +51,14 @@ fr:
           <i>Inist-CNRS. 2015.</i>
         </li>
         <li>
+          <a target='_blank' href='http://www.france-grilles.fr/wp-content/uploads/2018/01/ModeleSMP_PRESOFTV3.1.pdf'>Modèle de Plan de Gestion de Logiciel de la Recherche V3.1, Projet PRESOFT, janvier 2018</a> [PDF, 18 pages]<br />
+          <i>Gomez-Diaz T., Romier G. 2018.</i>
+        </li>
+        <li>
+          <a target='_blank' href='https://www.software.ac.uk/sites/default/files/images/content/SMP_Checklist_2016_v0.1.pdf'>Checklist for a Software Management Plan. v0.1</a> [PDF, 25 pages]<br />
+          <i>The Software Sustainability Institute. 2016.</i>
+        </li>
+        <li>
           <a target='_blank' href='http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf'>Guidelines on FAIR Data Management in Horizon 2020</a> [PDF, 12 pages]<br />
           <i>European Commission. 2016, v3.0.</i>
         </li>
@@ -59,48 +67,59 @@ fr:
           <i>European Commission. 2017, v3.2.</i>
         </li>
         <li>
+        <li>
+          <a target='_blank' href='https://erc.europa.eu/content/erc-data-management-plan-template'>ERC Data Management Plan Template</a> [pageWeb]<br />
+          <i>European Research Council. 2017.</i>
+        </li>
+        <li>
           <a target='_blank' href='http://www.dcc.ac.uk/resources/data-management-plans/checklist'>Checklist du DCC pour les DMP</a> [PDF, 4 pages]<br />
-          <i>Digital Curation Centre. 2013, v.4.0. Edinburgh: Digital Curation Centre.</i><br />
+          <i>Digital Curation Centre. 2013, v.4.0. Edinburgh (UK).</i><br />
   Une liste de 13 questions et de recommandations associées, qui représentent les principales problématiques qui se présentent dans la gestion et le partage de DMP. Cette liste sert de modèle générique pour DMPonline, cette liste est proposée quand aucune prescription financière ou organisationnelle ne s'impose à l'utilisateur.
         </li>
         <li>
-          <a target='_blank' href='http://www.dcc.ac.uk/webfm_send/486'>How to develop a Data Management and Sharing Plan</a> [PDF, 8 pages]<br />
-          <i>Jones S. 2011. DCC How-to Guides. Edinburgh: Digital Curation Centre.</i><br />
-          Un guide créé par le Digital Curation Center fournissant des conseils pratiques sur les exigences des financeurs anglais lors de la rédaction et le partage de plan de gestion des données.
+          <a target='_blank' href='https://www.cessda.eu/content/download/3844/35033/file/20171117DMPQuestionsCESSDAExpertTourGuide.pdf'>Adapt your Data Management Plan. A list of Data Management Questions based on the Expert Tour Guide on Data Management</a> [PDF, 6 pages]<br />
+          <i>CESSDA. 2017.</i>
         </li>
      </ul>
-    <h3>Exemples de DMP</h3>
+    <h3>Exemples de Data Management Plans</h3>
+    <p><b>Quatre exemples de DMP rédigés dans le cadre de projets H2020 :</b></p>
+    <ul>
+      <li>- <a target='_blank' href='http://www.amecrys-project.eu/images/documents/Deliverable-7.2---Data-Management-Plan.pdf'>AMECRYS. Revolutionising Downstream Processing of Monoclonal Antibodies by Continuous Template-Assisted Membrane Crystallization</a> [PDF, 23 pages]</li>
+      <li>- <a target='_blank' href='http://pieproject.eu/wp-content/uploads/2017/01/PIE_D1.2_FIN.pdf'>PIE News. Poverty, Income, and Employment News NEWS</a> [PDF, 29 pages]</li>
+      <li>- <a target='_blank' href='http://www.compbiomed.eu/wp-content/uploads/2017/03/D1.3_DataManagementPlan_CBK_v1.3.pdf'>CompBiomed. A Centre of Excellence in Computational Biomedicine</a> [PDF, 15 pages]</li>
+      <li>- <a target='_blank' href='https://www.aquacosm.eu/download/deliverables/D4.2%20Database%20management%20Plan_final.pdf'>AQUASCOM. Network of Leading European AQUAtic MesoCOSM Facilities Connecting Mountains to Oceans from the Arctic to the  Mediterranean</a> [PDF, 18 pages]</li>
+    </ul>      	
     <ul class='help_ul'>
       <li>
-        <a target='_blank' href='http://www.dcc.ac.uk/webfm_send/2507'>Comment élaborer un plan de gestion et de partage de données</a> [PDF, 7 pages]<br />
-        Un DMP présenté par un chercheur de l'Université de Bristol, avec les commentaires des auditeurs.
+        <a target='_blank' href='https://riojournal.com/browse_journal_articles.php?form_name=filter_articles&sortby=0&journal_id=17&search_in_=0&section_type%5B%5D=231'>Rio journal Data Management Plan collection</a> [webpage]<br />
+  	Une sélection de plans de gestions de données publiés dans RIO Journal.
       </li>
       <li>
-        <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/adocs/Leeds-RoaDMaP-DMPs.pdf'>Deux DMP en Sciences Sociales</a> [PDF, 7 pages]<br />
-        Exemples de  plans réalisés par des chercheurs de l'Université de Leeds, partagés dans le cadre des supports de formation Leeds RoaDMaP
+        <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/adocs/Leeds-RoaDMaP-DMPs.pdf'>Two social science DMPs</a> [PDF, 7 pages]<br />
+        Exemples de  plans réalisés par des chercheurs de l'Université de Leeds, partagés dans le cadre des supports de formation Leeds RoaDMaP.
       </li>
       <li>
-        <a target='_blank' href='http://www.northumbria.ac.uk/static/5007/ceispdf/dmpfull.pdf'>DMP en Santé et médecine</a> [PDF, 11 pages]<br />
-        Exemple de DMP par le projet de formation à la gestion de données en Santé DATUM
+        <a target='_blank' href='http://www.northumbria.ac.uk/static/5007/ceispdf/dmpfull.pdf'>Health sciences DMP</a> [PDF, 11 pages]<br />
+        Exemple de DMP par le projet de formation à la gestion de données en Santé DATUM.
       </li>
       <li>
         <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/adocs/DMTpsych-example-DMP.pdf'>Psychology DMP</a> [PDF, 11 pages]<br />
-        Un DMP fictif très détaillé en psychologie élaboré par le projet pédagogique DMTpsych RDM, à partir de travaux expérimentaux précurseurs
+        Un DMP fictif très détaillé en psychologie élaboré par le projet pédagogique DMTpsych RDM, à partir de travaux expérimentaux précurseurs.
       </li>
       <li>
-        <a target='_blank' href='http://libraries.ucsd.edu/research-and-collections/data-curation/data-management/dmp-samples.html'>Exemples de DMP de l'Université de San Diego</a> [pageWeb]<br />
-        Une vingtaine d'exemples de DMP proposés à la <i>National Science Foundation</i> (NSF) aux États-Unis par des enseignants chercheurs de l'Université de Californie à San Diego
+        <a target='_blank' href='https://libraries.ucsd.edu/research-and-collections/data-curation/dmp-samples.html'>UCSD Example Data Management Plans</a> [pageWeb]<br />
+        Une vingtaine d'exemples de DMP proposés à la <i>National Science Foundation</i> (NSF) aux États-Unis par des enseignants chercheurs de l'Université de Californie à San Diego.
       </li>
       <li>
-        <a target='_blank' href='http://rss.mines.edu/RSS-data-management-plan'>Exemples de l'École des Mines du Colorado (<i>Colorado School of Mines examples</i>)</a> [pageWeb]<br />
-        Plusieurs exemples de DMP américains de cette école et d'autres établissements
+        <a target='_blank' href='http://rss.mines.edu/RSS-data-management-plan'>Colorado School of Mines examples</a> [pageWeb]<br />
+        Plusieurs exemples de DMP américains de l'Ecole des Mines du Colorado et d'autres établissements.
       </li>
       <li>
-        <a target='_blank' href='https://www.dataone.org/data-management-planning'>DMP de la NSF</a> [pageWeb]<br />
-        5 DMP soumis à la NSF, partagés par la <i>DataOne initiative</i>
+        <a target='_blank' href='https://www.dataone.org/data-management-planning'>NSF data management plans</a> [pageWeb]<br />
+        5 DMP soumis à la NSF, partagés par la <i>DataOne initiative.</i>
       </li>
       <li>
-       <a target='_blank' href='http://library.umassmed.edu/necdmc/dmp'>DMP en biologie et en chimie</a> [pageWeb]<br />
+       <a target='_blank' href='http://library.umassmed.edu/necdmc/dmp'>Biology and chemistry DMPs</a> [pageWeb]<br />
        Trois exemples de DMP américains partagés par NECDMC, un outil pédagogique pour la formation à la gestion de données de recherche d'étudiants de niveaux L, M et en recherche en Sciences, Technologies et Médecine.
       </li><li>
         <a target='_blank' href='http://www.neh.gov/divisions/odh/grant-news/data-management-plans-successful-grant-applications-2011-2014-now-available'>Data management plans from successful grant applications (2011-2014)</a> [pageWeb]<br />
@@ -117,6 +136,10 @@ fr:
         <i>Pôle IST sur les Données de la Recherche (Digitalist) - INRA.</i>
       </li>
       <li>
+        <a target='_blank' https://donnees-recherche.irstea.fr/'>Gestion des données de recherce</a> [webpage]<br />
+        <i>IRSTEA.</i>
+      </li>
+      <li>
         <a target='_blank' href='http://www.doranum.fr/'>Le projet DoRANum (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage)</a> [pageWeb]<br />
         <i>Inist-CNRS, Urfist, BSN9, Dist-CNRS.</i><br />
         Le projet DoRANum a pour objectif de mettre en place un dispositif de formation à distance d’accès coordonné, intégrant différentes ressources d’auto-formation sur la thématique de la gestion et du partage des données de la recherche.
@@ -126,64 +149,61 @@ fr:
         <i>Deboin M.C. 2017. Montpellier (FRA) : CIRAD.</i>
       </li>
       <li>
-        <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5705/42112/version/2/file/CoopIST-rendre-publics-jeux-donnees-avril-2015.pdf'>Rendre publics ses jeux de données scientifiques en 6 points</a> [PDF, 6 pages]<br />
+        <a target='_blank' href='https://coop-ist.cirad.fr/content/download/5705/42112/version/4/file/CoopIST-rendre-publics-jeux-donnees-avril-2015.pdf'>Rendre publics ses jeux de données scientifiques en 6 points</a> [PDF, 6 pages]<br />
         <i>Dedieu L., Fily M.F. 2015. Montpellier (FRA) : CIRAD.</i>
       </li>
       <li>
-        <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5979/43909/version/1/file/CoopIST-Citer-jeu-donnees-scientifiques-20160112.pdf'>Citer un jeu de données scientifiques en 5 points</a> [PDF, 5 pages]<br />
-        <i>Deboin M.C. 2016. Montpellier (FRA) : CIRAD.</i>
+        <a target='_blank' href='https://coop-ist.cirad.fr/content/download/5979/43909/version/2/file/CoopIST_Citer_jeu_donnees_scientifiques_20171207bis.pdf'>Citer un jeu de données scientifiques en 5 points</a> [PDF, 5 pages]<br />
+        <i>Deboin M.C. 2017. Montpellier (FRA) : CIRAD.</i>
       </li>
       <li>
         <a target='_blank' href='http://www.donneesdelarecherche.fr'>Site d'information sur les Données de la Recherche</a> [pageWeb]<br />
         <i>Avec le support du Ministère français de l'Enseignement Supérieur et de la Recherche, L'inist-CNRS développe une plateforme d'information sur les données de la recherche. Directrice de la rédaction: Thérèse Hameau.</i>
       </li>
       <li>
-        <a target='_blank' href='http://guides-formadoct.ueb.eu/donnees_recherche?hs=a'>Les données de la recherche</a> [webpage]<br />
-        <i>Serres A., Vignale F. In UEB (Université Européenne de Bretagne). Form@doct. Rennes : UEB, janvier  2016</i>
+        <a target='_blank' href='http://guides-formadoct.ueb.eu/donnees_recherche?hs=a'>Les données de la recherche</a> [pageWeb]<br />
+        <i>Serres A., Vignale F. In UEB (Université Européenne de Bretagne). Form@doct. Rennes : UEB, janvier  2016.</i>
       </li>
       <li>
         <a target='_blank' href='http://prodinra.inra.fr/?locale=fr#!ConsultNotice:382263'>Ouverture des données de la recherche. Guide d'analyse du cadre juridique en France</a> [PDF, 46 pages]<br />
         <i>Becard N., Castets-Renard C., Chassang G., Courtois M.-A., Dantant M., Gandon N., Martin C., Martelletti A., Mendoza-Caminade A., Morcrette N., Neirac C. 2016. DOI : 10.15454/1.481273124091092E12.</i>
       </li>
       <li>
-        <a target='_blank' href='http://www.data-archive.ac.uk/media/2894/managingsharing.pdf'>Managing and Sharing Data: best practice for researchers</a> [PDF, 36 pages]<br />
-        <i>Van den Eynden V., Corti L., Woollard M., Bishop L., Horton L. 2011, 3d ed. Colchester (UK): UK Data Archive.</i><br />
-        Un guide édité par le <i>UK Data Service</i> abordant une série de sujets, dont les formats et description de données, les questions d'éthique, de droit d'auteur et de partage des données.
+        <a target='_blank' href='https://erc.europa.eu/sites/default/files/document/file/ERC_info_document-Open_Research_Data_and_Data_Management_Plans.pdf'>Open Researche Data and Data Management Plans. Information for ERC grantees.</a> [PDF, 15 pages]<br />
+        <i>European Research Council, Scientific Council. 2018.</i>
       </li>
       <li>
         <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/publications/reports/guides/How_to_Cite_Link.pdf'>How to Cite Datasets and Link to Publications</a> [PDF, 12 pages]<br />
-        <i>Ball A., Duke M. 2015. DCC How-to Guides. Edinburgh: Digital Curation Centre.</i><br />
+        <i>Ball A., Duke M. 2015. DCC How-to Guides. Digital Curation Centre.Edinburgh (UK).</i><br />
         Un guide édité par le <i>Digital Curation Centre</i> (Centre de curation numérique britannique - DCC) contenant des recommandations pratiques sur la manière de citer des données et signalant les différents outils et infrastructures de référencement de données.
       </li>
       <li>
-        <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/How%20to%20Appraise%20and%20Select%20Research%20Data.pdf'>How to Appraise and Select Research Data for Curation</a> [PDF, 8 pages]<br />
-        <i>Whyte A., Wilson A. 2010. DCC How-to Guides. Edinburgh: Digital Curation Centre.</i><br />
-        Un guide diffusé par l'ANDS et le DCC sur les méthodes de sélection des données à retenir pour leur conservation à long terme, leur partage et leur réutilisation. Plusieurs critères sont proposés pour faciliter la prise de décision.
+        <a target='_blank' href='https://rd-alliance.org/group/data-citation-wg/outcomes/data-citation-recommendation.html'>Scalable Dynamic Data Citation Methodology</a> [pageWeb]<br />
+        <i>Rauber A., Asmi A., Uytvanck van D., Pröll S. Research Data Alliance, Data Citation WG. 2015.</i>
       </li>
       <li>
-        <a target='_blank' href='http://datalib.edina.ac.uk/mantra'>Research Data MANTRA</a> [pageWeb]<br />
-        <i>EDINA and Data Library, Université d' Edimbourg.</i><br />
-        Un cours en ligne destiné aux chercheurs ou d'autres acteurs désireux de gérer des données dans le cadre de leurs opérations de recherche. Ce cours comporte un certain nombre de considérations d'ordre pratique dans le domaine logiciel, sur l'utilisation de SPSS, R, ArcGIS et NVivo.
+        <a target='_blank' href='https://www.force11.org/software-citation-principles'>Software Citation Principles</a> [pageWeb]<br />
+        <i>Smith AM, Katz DS, Niemeyer KE. 2016. FORCE 11 Software Citation Working Group.</i>
       </li>
     </ul>"
-    body_text_tab_1_html: "<p>Quand vous vous connectez à DMP OPIDoR, vous êtes redirigé vers la page intitulée 'Mes plans'. À partir de là, vous pouvez éditer, partager, exporter ou supprimer l'un de vos plans. Vous verrez à cet endroit aussi les plans que d'autres ont partagé avec vous.</p>
+    body_text_tab_1_html: "<p>Quand vous vous connectez à DMP OPIDoR, vous êtes redirigé vers la page intitulée 'Mes plans'. À partir de là, vous pouvez modifier, partager, exporter ou supprimer l'un de vos plans. Apparaissent également les plans que d'autres ont partagé avec vous.</p>
     <h3>Créer un plan</h3>
-    <p>Pour créer un plan, cliquez sur le bouton 'Créer un plan' à la page 'Mes plans' ou dans le menu du haut. Faites des choix dans les listes déroulantes et les zones à cocher afin de déterminer les questions et les recommandations qui seront affichées. Confirmez votre choix en cliquant sur'Oui, créer un plan'.</p>
+    <p>Pour créer un plan, cliquez sur le bouton 'Créer un plan' à la page 'Mes plans' ou dans le menu supérieur. Sélectionnez dans les listes déroulantes et les cases à cocher afin de déterminer les questions et les recommandations à afficher. Confirmez votre choix en cliquant sur'Créer un plan'.</p>
     <h3>Rédiger votre plan</h3>
-    <p>L'interface sous forme d'onglets vous permet de naviguer d'une fonction à l'autre quand vous mettez au point votre plan.</p>
+    <p>L'interface sous forme d'onglets vous permet de naviguer dans diverses rubriques lorsque vous rédigez votre plan.</p>
     <ul>
-       <li>- L'option 'Renseignements sur le plan' comprend des renseignements administratifs de base, indique la série de questions et de recommandations sur laquelle votre plan s'appuie et vous donne un aperçu des questions auxquelles vous devez répondre.</li>
-       <li>- Les onglets suivants contiennent les questions auxquelles il faut répondre. Il peut y avoir plus d'un onglet si votre organisme financeur ou votre université posent différentes séries de questions à diverses étapes, par exemple lors d'une demande de subvention et après l'octroi d'une subvention.</li>
+       <li>- L'onglet 'Renseignements sur le plan' comprend quelques renseignements administratifs de base, indique les séries de questions et de recommandations sur lesquelles votre plan s'appuie et vous donne un aperçu des questions auxquelles vous devez répondre.</li>
+       <li>- Les onglets suivants contiennent les questions auxquelles vous pouvez répondre. Il peut y avoir plusieurs onglets si votre financeur ou votre université pose différentes séries de questions à diverses étapes, par exemple lors d'une demande de subvention et après l'octroi d'une subvention.</li>
        <li>- L'onglet 'Partager' vous permet d'inviter d'autres personnes à lire votre plan ou à y collaborer.</li>
        <li>- L'onglet 'Exporter' vous permet de télécharger votre plan en divers formats, ce qui peut être utile si vous devez joindre votre plan à une demande de subvention.</li>
     </ul>
-    <p>Lorsque vous consultez l'un ou l'autre des onglets de questions, vous verrez les différentes sections de votre plan affichées. Cliquez sur ces onglets à tour de rôle pour répondre aux questions. Vous pouvez choisir le format de vos réponses à l'aide des boutons de mise en forme.</p>
-    <p>Les recommandations sont affichées dans la partie de droite. Cliquez sur le symbole '+' pour les consulter.</p>
+    <p>Lorsque vous consultez l'un ou l'autre des onglets de questions, vous verrez les différentes sections de votre plan. Cliquez successivement sur les différentes sections pour répondre aux questions. Vous pouvez mettre en forme vos réponses à l'aide des boutons de l'éditeur de texte.</p>
+    <p>Les recommandations sont affichées dans le cadre à droite. Cliquez sur le symbole '+' pour les consulter.</p>
     <p>N'oubliez pas d'enregistrer vos réponses avant de poursuivre.</p>
     <h3>Partager les plans</h3>
     <p>Inscrivez l'adresse électronique de tout collaborateur que vous aimeriez inviter à lire ou à modifier votre plan. Choisissez le niveau d'autorisation que vous souhaitez lui accorder dans les options de la liste déroulante et cliquez sur'Ajouter un collaborateur'.</p>
     <h3>Exporter les plans</h3>
-    <p>En choisissant cette option, vous pouvez télécharger votre plan en divers formats, ce qui peut être utile si vous devez joindre votre plan à une demande de subvention. Choisissez le format dans lequel vous aimeriez voir ou télécharger votre plan et cliquez pour l'exporter. Lorsque vous vous connectez à DMP OPIDoR, vous êtes dirigé vers la page'Mes plans'. À partir de cette page, vous pouvez modifier, partager, exporter ou supprimer l'un ou l'autre de vos plans. Vous voyez également les plans qui ont été partagés avec vous par d'autres personnes.</p>"
+    <p>Vous pouvez télécharger votre plan en divers formats, ce qui peut être utile si vous devez joindre votre plan à une demande de subvention. Choisissez le format dans lequel vous souhaitez télécharger votre plan et cliquez sur exporter.</p>"
 
 
 
@@ -192,7 +212,7 @@ fr:
     body_text_html: "<div class='white_background'>
     <p>DMP OPIDoR est mis à disposition de la communauté de l’Enseignement supérieur et de la Recherche française par le <a href='http://www.cnrs.fr' target='_blank'>Centre National de la Recherche Scientifique</a> (CNRS)</p>
     <p>Toute utilisation de DMP OPIDoR suppose l’acceptation et le respect de l’ensemble des termes des présentes conditions générales d’utilisation.</p>
-    <p>De plus, tout utilisateur de DMP OPIDoR reconnaît avoir lu, au préalable, la <a href='http://www.dgdr.cnrs.fr/bo/2014/BOavrilV2.pdf' target='_blank'>charte de la Sécurité des Systèmes d’Information du CNRS (voir page 20).</a></p>
+    <p>De plus, tout utilisateur de DMP OPIDoR reconnaît avoir lu, au préalable, la <a href='http://www.dgdr.cnrs.fr/bo/2014/BOavrilV2.pdf' target='_blank'>charte de la Sécurité des Systèmes d’Information du CNRS</a> (voir page 20).</p>
     <h3>Mentions légales</h3>
         <p>Le site est édité par:</p>
         <ul>
@@ -201,8 +221,8 @@ fr:
             <li>75794 PARIS Cedex 16 – France</li>
         </ul>
         <ul>
-            <li>Téléphone: +33 (0)1 44 96 40 00</li>
-            <li>Télécopie: +33 (0)1 44 96 53 90</li><br/>
+            <li>Téléphone : +33 (0)1 44 96 40 00</li>
+            <li>Télécopie : +33 (0)1 44 96 53 90</li><br/>
         </ul>
         <p>Il est géré et hébergé par:</p>
         <ul>
@@ -212,10 +232,10 @@ fr:
             <li>F-54519 VANDOEUVRE-LES-NANCY Cedex – France</li>
         </ul>
         <ul>
-            <li>Téléphone: +33 (0)3 83 50 46 00</li>
-            <li>Télécopie: +33 (0)3 83 50 46 50</li><br/>
+            <li>Téléphone : +33 (0)3 83 50 46 00</li>
+            <li>Télécopie : +33 (0)3 83 50 46 50</li><br/>
         </ul>
-    <p><b>Directeur de la publication:</b> Alain Fuchs</p>
+    <p><b>Directeur de la publication:</b> Antoine Petit</p>
     <p><b>Directeur de rédaction:</b> Dominique Wolf</p>
     <p><b>Service utilisateurs:</b> <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a></p>
     <h3>Données personnelles</h3>
@@ -228,7 +248,7 @@ fr:
     <h3>Politique de confidentialité</h3>
     <p>Les informations que vous entrez dans l’application peuvent être vues par vous, les personnes avec qui vous avez partagé l’accès, et –exclusivement à des fins de maintenance du service – les administrateurs CNRS de l’application. Nous n’aurons pas accès directement, nous n’utiliserons et ne partagerons pas le contenu de vos plans de gestion de données avec quiconque sans votre permission.</p>
     <h3>Propriété intellectuelle</h3>
-    <p>L’outil DMP OPIDoR est basé sur le logiciel libre appelé DMPonline qui a été mis au point par le Digital Curation Centre (DCC) et partagé en vertu de la licence publique générale GNU Affero. Le code source de la version modifiée sera partagé sur GitHub sous la même licence.</p>
+    <p>L’outil DMP OPIDoR est basé sur le logiciel libre appelé DMPRoadmap qui a été développé conjointement par le Digital Curation Centre (DCC) et l'University of California Curation Center (UC3) et partagé en vertu de la licence MIT. Le code source de la version modifiée sera partagé sur GitHub sous la même licence.</p>
     <h3>Clause de non-responsabilité</h3>
     <p>Le CNRS ne pourra en aucun cas être tenu responsable de tout dommage de quelque nature qu’il soit résultant de l’interprétation ou de l’utilisation des informations et/ou documents disponibles sur ce site.</p>
     <p>L’hébergeur peut fermer le site à tout moment, sans préavis, en cas d’atteinte à la sécurité.</p>

@@ -6,7 +6,7 @@
 		<%= devise_error_messages! %>
 	</li>
 	<li>
-		<%= f.email_field :email, placeholder: (_('Email') + ' *'), :as => :email, :class => 'text_field has-tooltip reg-input', 'data-toggle' => "tooltip", 'data-container' => "body", 'title' => _('Please enter your email') %>
+		<%= f.email_field :email, placeholder: (_('Email address') + ' *'), :as => :email, :class => 'text_field has-tooltip reg-input', 'data-toggle' => "tooltip", 'data-container' => "body", 'title' => _('Please enter your email') %>
 		<div class="alert alert-error" style="display:none">
 			<strong><%= _('Error!')%></strong> <%= _('You must enter a valid email address.')%>
 		</div>

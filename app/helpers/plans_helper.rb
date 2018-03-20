@@ -40,7 +40,7 @@ module PlansHelper
         [ "tmp_td_small", text ]
       when 'shared'
         shared_num = plan.users.count - 1
-        text = shared_num > 0 ? (_('Yes') + " (with #{shared_num} people) ") : _('No')  # Hardcoded strings are not internationalised
+        text = shared_num > 0 ? ( _('Yes (with %{shared_num} people)') % { shared_num: shared_num } ) : _('No')  # Hardcoded strings are not internationalised
         [ "dmp_td_small", text ]
       when 'visibility'
         text = if plan.visibility == 'organisationally_visible'

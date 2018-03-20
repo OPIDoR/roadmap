@@ -201,7 +201,7 @@ msgid ""
 "                <p>Email <a href='mailto:%{organisation_email}?Subject=%{application_name} inquiry' target='_top'>%{organisation_email}</a></p>"
 msgstr ""
 
-msgid "A Data Management Plan in %{application_name} has been shared with you"
+msgid "A Data Management Plan in %{application_name} has been shared with you by %{user_name}"
 msgstr ""
 
 msgid "A colleague has invited you to contribute to their Data Management Plan at "
@@ -1690,4 +1690,82 @@ msgid "user"
 msgstr ""
 
 msgid "user must be in your organisation"
+msgstr ""
+
+msgid "The \"%{template_title}\" %{is_generic_template} provided by %{template_organisation_name}."
+msgstr ""
+
+msgid "A version of  "%{based_on_title}" %{based_on_include_template} that has been customised by  %{template_organisation_name}."
+msgstr ""
+
+msgid "Yes (with %{shared_num} people)"
+msgstr ""
+
+msgid "Plan was successfully created."
+msgstr ""
+
+msgid "This plan is based on the %{template_org_name} template"
+msgstr ""
+
+msgid "This plan is based on the %{funder_name} template with customisations by the %{org_name}"
+msgstr ""
+
+msgid "Could not create your %{o}."
+msgstr ""
+
+msgid "Could not update your %{o}."
+msgstr ""
+
+msgid "Could not delete the %{o}."
+msgstr ""
+
+msgid "Link account with %{scheme_description} ID"
+msgstr ""
+
+msgid "Your account has been linked to %{scheme_description}."
+msgstr ""
+
+msgid "Unlink your account from %{scheme_description}. You can link again at any time."
+msgstr ""
+
+msgid "Are you sure you want to unlink %{scheme_description} ID?"
+msgstr ""
+
+msgid "Export Settings"
+msgstr ""
+
+msgid "The %{application_name} team"
+msgstr ""
+
+msgid "%{user_name} has invited you to contribute to their Data Management Plan at %{root_url}"
+msgstr ""
+
+msgid "You have been given \"%{access_level}\" access to"
+msgstr ""
+
+msgid "co-owner"
+msgstr ""
+
+msgid "editor"
+msgstr ""
+
+msgid "read-only"
+msgstr ""
+
+msgid "Permissions removed on a DMP in"
+msgstr ""
+
+msgid "Changed permissions on a DMP in"
+msgstr ""
+
+msgid "You now have %{access_level} access."
+msgstr ""
+
+msgid "This means you can read the plan and leave comments."
+msgstr ""
+
+msgid "This means you can write and edit the plan in a collaborative manner."
+msgstr ""
+
+msgid "This means you can write and edit the plan in a collaborative manner. You can also grant rights to other collaborators."
 msgstr ""

@@ -1249,7 +1249,7 @@ msgstr "Créer un modèle"
 msgid "Create account"
 msgstr "Créer un compte"
 
-msgid "Create Plan"
+msgid "Create plan"
 msgstr "Créer un plan"
 
 msgid "Created"

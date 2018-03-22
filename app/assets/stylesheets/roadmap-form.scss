@@ -54,9 +54,6 @@ form.roadmap-form {
     -moz-border-radius: 10px;
     border-radius: 10px;
 
-    display: flex;
-    flex-direction: column;
-
     label,
     input[type="checkbox"],
     .combobox-container,
@@ -77,9 +74,6 @@ form.roadmap-form {
       margin-left: 5px;
     }
 
-    input.form-submit {
-      width: 140px;
-    }
   }
 
   /* Fieldset with labels to the left of inputs */

@@ -12,7 +12,7 @@ en_GB:
     # tab_2: "Background"
     # une page unique encadrée
 
-    body_text_html: "<div class='white_background'><p>A Data Management Plan (DMP) is a document that specifies which data will be collected or generated, how they will be managed, shared and preserved during and after the project. Preparing a plan is a good practice of any research project generating data. Moreover, funding bodies and institutions increasingly require their researchers to produce DMPs.</p><p>DMP OPIDoR is a tool to help you write a DMP.</p><p>DMP OPIDoR is based on <a href='https://dmponline.dcc.ac.uk/' target='_blank'>DMPonline</a> code, originally developped by UK's <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a> (DCC). DMP OPIDoR source code is forked from the DMPonline code and is available on <a href='https://github.com/OPIDoR/DMPonline_v4' target=' blank'>GitHub</a>. DMP OPIDoR has been customised for French researchers.</p></br>
+    body_text_html: "<div class='white_background'><p>A Data Management Plan (DMP) is a document that specifies which data will be collected or generated, how they will be managed, shared and preserved during and after the project. Preparing a plan is a good practice of any research project generating data. Moreover, funding bodies and institutions increasingly require their researchers to produce DMPs.</p><p>DMP OPIDoR is a tool to help you write a DMP.</p><p>DMP OPIDoR is based on the open source DMPRoadmap codebase, which is jointly developped by the <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a> (DCC) and the <a href='https://www.cdlib.org/uc3/' target='_blank'>University of California Center</a> (UC3). DMP OPIDoR source code is available on <a href='https://github.com/OPIDoR/DMPOPIDoR' target=' blank'>GitHub</a>. DMP OPIDoR has been customised for French researchers.</p></br>
     <h3>How the tool works</h3>
         <p>DMP OPIDoR includes a number of templates that represent the requirements of different funders and institutions.Users are asked three questions at the outset so we can determine the appropriate template to display. Guidance is provided to help you interpret and answer the questions. This guidance is provided by researcher funders, universities and disciplines.</p>
         <p>The thematic DCC guidance is listed in <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/publications/DMP-themes.pdf'>'Data Management Planning themes'</a> by DCC.</p>
@@ -37,7 +37,7 @@ en_GB:
     body_text_tab_2_html: "<h3>Useful resources on Data or Software Management Planning</h3>
       <ul class='help_ul'>
         <li>
-          <a target='_blank' https://archivesic.ccsd.cnrs.fr/sic_01690547/document'>Réaliser un plan de gestion de données</a> [PDF, 33 pages]<br />
+          <a target='_blank' href='https://archivesic.ccsd.cnrs.fr/sic_01690547/document'>Réaliser un plan de gestion de données</a> [PDF, 33 pages]<br />
           <i>
 Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et Université Paris Descartes. 2018.</i>
         </li>
@@ -62,7 +62,7 @@ Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et
           <i>European Commission. 2016, v3.0.</i>
         </li>
         <li>
-          <a target='_blank' href='http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-pilot-guide_en.pdf'>Guidelines on Open Access to Scientific Publications and Research Data in Horizon 2020</a> [PDF, 10 pages]<br />
+          <a target='_blank' href='http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-pilot-guide_en.pdf'>Guidelines on Open Access to Scientific Publications and Research Data in Horizon 2020</a> [PDF, 11 pages]<br />
           <i>European Commission. 2017, v3.2.</i>
         </li>
         <li>
@@ -70,7 +70,7 @@ Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et
           <i>European Research Council. 2017.</i>
         </li>
         <li>
-          <a target='_blank' href='http://www.dcc.ac.uk/resources/data-management-plans/checklist'>DCC Checklist for a Data Management Plan</a> [PDF, 4 pages]<br />
+          <a target='_blank' href='http://www.dcc.ac.uk/resources/data-management-plans/checklist'>DCC Checklist for a Data Management Plan</a> [webpage]<br />
           <i>Digital Curation Centre. 2013, v.4.0. Edinburgh (UK).</i><br />
   A list of questions and associated guidance, that represent the main issues to come up in Data Management and Sharing Plans.
         </li>
@@ -80,13 +80,14 @@ Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et
         </li>
      </ul>
     <h3>Example Data Management Plans</h3>
-    <p><b>Four examples of H2020 DMPs :</b></p>
+    <p><b>Examples of H2020 DMPs :</b></p>
     <ul>
-      <li>- <a target='_blank' href='http://www.amecrys-project.eu/images/documents/Deliverable-7.2---Data-Management-Plan.pdf'>AMECRYS. Revolutionising Downstream Processing of Monoclonal Antibodies by Continuous Template-Assisted Membrane Crystallization</a> [PDF, 23 pages]</li>
-      <li>- <a target='_blank' href='http://pieproject.eu/wp-content/uploads/2017/01/PIE_D1.2_FIN.pdf'>PIE News. Poverty, Income, and Employment News NEWS</a> [PDF, 29 pages]</li>
-      <li>- <a target='_blank' href='http://www.compbiomed.eu/wp-content/uploads/2017/03/D1.3_DataManagementPlan_CBK_v1.3.pdf'>CompBiomed. A Centre of Excellence in Computational Biomedicine</a> [PDF, 15 pages]</li>
-      <li>- <a target='_blank' href='https://www.aquacosm.eu/download/deliverables/D4.2%20Database%20management%20Plan_final.pdf'>AQUASCOM. Network of Leading European AQUAtic MesoCOSM Facilities Connecting Mountains to Oceans from the Arctic to the  Mediterranean</a> [PDF, 18 pages]</li>
+      <li>- <a target='_blank' href='http://www.amecrys-project.eu/images/documents/Deliverable-7.2---Data-Management-Plan.pdf'>AMECRYS</a> Revolutionising Downstream Processing of Monoclonal Antibodies by Continuous Template-Assisted Membrane Crystallization. [PDF, 23 pages]</li>
+      <li>- <a target='_blank' href='http://pieproject.eu/wp-content/uploads/2017/01/PIE_D1.2_FIN.pdf'>PIE News</a> Poverty, Income, and Employment News NEWS. [PDF, 29 pages]</li>
+      <li>- <a target='_blank' href='http://www.compbiomed.eu/wp-content/uploads/2017/03/D1.3_DataManagementPlan_CBK_v1.3.pdf'>CompBiomed</a> A Centre of Excellence in Computational Biomedicine. [PDF, 15 pages]</li>
+      <li>- <a target='_blank' href='https://www.aquacosm.eu/download/deliverables/D4.2%20Database%20management%20Plan_final.pdf'>AQUASCOM</a> Network of Leading European AQUAtic MesoCOSM Facilities Connecting Mountains to Oceans from the Arctic to the Mediterranean. [PDF, 18 pages]</li>
     </ul>
+    <p><b>Other examples of DMPs</b></p>  
     <ul class='help_ul'>
       <li>
         <a target='_blank' href='https://riojournal.com/browse_journal_articles.php?form_name=filter_articles&sortby=0&journal_id=17&search_in_=0&section_type%5B%5D=231'>Rio journal Data Management Plan collection</a> [webpage]<br />
@@ -97,20 +98,12 @@ Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et
   Example plans from researchers at the University of Leeds, shared as part of the Leeds RoaDMaP training materials.
       </li>
       <li>
-        <a target='_blank' href='http://www.northumbria.ac.uk/static/5007/ceispdf/dmpfull.pdf'>Health sciences DMP</a> [PDF, 11 pages]<br />
-  Example DMP produced by the DATUM for Health RDM training project.
-      </li>
-      <li>
         <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/adocs/DMTpsych-example-DMP.pdf'>Psychology DMP</a> [PDF, 11 pages]<br />
   A very detailed, fictional psychology DMP produced by the DMTpsych RDM training project, based on a seminal psychology experiment.
       </li>
       <li>
         <a target='_blank' href='https://libraries.ucsd.edu/research-and-collections/data-curation/dmp-samples.html'>UCSD Example Data Management Plans</a> [webpage]<br />
   Over 20 example plans submitted to the National Science Foundation (NSF) in the United States by academics at UC San Diego.
-      </li>
-      <li>
-        <a target='_blank' href='http://rss.mines.edu/RSS-data-management-plan'>Colorado School of Mines examples</a> [webpage]<br />
-  A variety of US example DMPs from Mines and elsewhere.
       </li>
       <li>
         <a target='_blank' href='https://www.dataone.org/data-management-planning'>NSF data management plans</a> [webpage]<br />
@@ -123,7 +116,7 @@ Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et
         <a target='_blank' href='http://www.neh.gov/divisions/odh/grant-news/data-management-plans-successful-grant-applications-2011-2014-now-available'>Data management plans from successful grant applications (2011-2014)</a> [webpage]<br />
   National Endowment for the Humanities (NEH).
       </li><li>
-        <a target='_blank' href='http://www.wageningenur.nl/en/Expertise-Services/Data-Management-Support-Hub/Browse-by-Subject/Data-Management-Planning-1.htm'>What is a Data Management Plan?</a> [webpage]<br />
+        <a target='_blank' href='https://www.wur.nl/en/Expertise-Services/WDCC/Data-Management-WDCC/Planning/DMP-formats.htm'>Data Management Plan formats</a> [webpage]<br />
   Example DMPs  produced by PhD candidates and Chair Group at Wageningen UR (Netherlands).
       </li>
     </ul>
@@ -134,7 +127,11 @@ Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et
         <i>Pôle IST sur les Données de la Recherche (Digitalist) - INRA.</i>
       </li>
       <li>
-        <a target='_blank' href='http://www.doranum.fr/'>DoRANum Project (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage)</a> [webpage]<br />
+        <a target='_blank' href='https://donnees-recherche.irstea.fr/'>Gestion des données de recherche</a> [page web]<br />
+        <i>IRSTEA - Appui à la gestion des données de la recherche.</i>
+      </li>
+      <li>
+        <a target='_blank' href='http://www.doranum.fr/'>DoRANum (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage)</a> [webpage]<br />
         <i>Inist-CNRS, Urfist, BSN9, Dist-CNRS.</i><br />
         DoRANum project aims to establish a coordinated access remote training system, integrating different self-training on the theme of the management and sharing of research data resources.
       </li>
@@ -163,8 +160,8 @@ Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et
         <i>Becard N., Castets-Renard C., Chassang G., Courtois M.-A., Dantant M., Gandon N., Martin C., Martelletti A., Mendoza-Caminade A., Morcrette N., Neirac C. 2016. DOI : 10.15454/1.481273124091092E12.</i>
       </li>
       <li>
-        <a target='_blank' href='https://erc.europa.eu/sites/default/files/document/file/ERC_info_document-Open_Research_Data_and_Data_Management_Plans.pdf'>Open Researche Data and Data Management Plans. Information for ERC grantees.</a> [PDF, 15 pages]<br />
-        <i>European Research Council, Scientific Council. 2018.</i>
+        <a target='_blank' href='https://erc.europa.eu/sites/default/files/document/file/ERC_info_document-Open_Research_Data_and_Data_Management_Plans.pdf'>Open Research Data and Data Management Plans. Information for ERC grantees.</a> [PDF, 15 pages]<br />
+        <i>European Research Council, Scientific Council. 2018, v1.0.</i>
       </li>
       <li>
         <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/publications/reports/guides/How_to_Cite_Link.pdf'>How to Cite Datasets and Link to Publications</a> [PDF, 12 pages]<br />
@@ -172,12 +169,12 @@ Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et
         A guide by the Digital Curation Centre giving practical guidelines on how to cite data and the different tools and infrastructure that can be used to support data citation.
       </li>
       <li>
-        <a target='_blank' href='https://rd-alliance.org/group/data-citation-wg/outcomes/data-citation-recommendation.html'>Scalable Dynamic Data Citation Methodology</a> [pageWeb]<br />
+        <a target='_blank' href='https://b2share.eudat.eu/records/ead2dc65f599497f81cf403b97fcfcb0'>Data Citation of Evolving Data: Recommendations of the Working Group on Data Citation (WGDC)</a> [webpage]<br />
         <i>Rauber A., Asmi A., Uytvanck van D., Pröll S. Research Data Alliance, Data Citation WG. 2015.</i>
       </li>
       <li>
         <a target='_blank' href='https://www.force11.org/software-citation-principles'>Software Citation Principles</a> [webpage]<br />
-        <i>Smith AM, Katz DS, Niemeyer KE. 2016. FORCE 11 Software Citation Working Group.</i><br />
+        <i>Smith A.M., Katz D.S., Niemeyer K.E., FORCE11 Software Citation Working Group. 2016. PeerJ Computer Science 2:e86. DOI: 10.7717/peerj-cs.86.</i><br />
       </li>
     </ul>"
     body_text_tab_1_html: "<p>When you login to DMP OPIDoR you will be directed to the 'My plans' page. From here you can edit, share, export or delete any of your plans. You will also see plans that have been shared with you by others.</p>
@@ -186,7 +183,7 @@ Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et
     <h3>Write your plan</h3>
     <p>The tabbed interface allows you to navigate through different functions when editing your plan.</p>
     <ul>
-      <li>- 'Plan details' includes basic administrative details, tells you what sets of questions and guidance your plan is based on and gives you an overview to the questions that you will be asked.</li>
+      <li>- 'Plan details' includes basic administrative details, tells you what template and guidance your plan is based on and gives you an overview to the questions that you will be asked.</li>
       <li>- The following tab(s) present the questions to answer. There may be more than one tab if your funder, institution or university asks different sets of questions at different stages e.g. at grant application and post-award.</li>
       <li>- The 'Share' tab allows you to invite others to read or contribute to your plan.</li>
       <li>- The 'Export' tab allows you to download your plan in various formats. This may be useful if you need to submit your plan as part of a grant application.</li>
@@ -264,3 +261,4 @@ Reymonet N., Moysan M., Cartier A., Délémontez R. Université Paris Diderot et
     <p>Users will be provided with information on such modifications on the home page. If users do not agree with the new terms of use, they will be able to close their account.</p>
     <br/>
    </div>"
+

@@ -20,7 +20,7 @@ defaults: &defaults
   application:
     name: 'DMP OPIDoR'
     url: 'https://github.com/OPIDoR/DMPOPIDoR'
-    version: '1.5.0_alpha10'
+    version: '1.5.0'
     release_notes_url: 'https://github.com/OPIDoR/DMPOPIDoR'
     issue_list_url: 'https://github.com/OPIDoR/DMPOPIDoR/issues'
     user_group_subscription_url: 'https://listes.services.cnrs.fr/wws/info/dmpopidor'

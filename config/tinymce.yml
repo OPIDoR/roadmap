@@ -7,6 +7,7 @@ plugins:
   - autoresize
   - link
   - paste
+  - lists
   - advlist
 advlist_bullet_styles: "circle,disc,square" #only disc bullets display on htmltoword
 target_list: false

@@ -3,7 +3,7 @@
 		<div class="welcome-message">
 
 			<h2><%= _('Welcome.')%></h2>
-			<%= raw _('<p>%{application_name} has been jointly developed by the <strong>%{organisation_name}</strong> to help you write data management plans.</p>') % {:application_name => Rails.configuration.branding[:application][:name], :organisation_name => Rails.configuration.branding[:organisation][:name]} %>
+			<%= raw _('<p>%{application_name} is provided by the <strong>%{organisation_name}</strong> to help you write data management plans.</p>') % {:application_name => Rails.configuration.branding[:application][:name], :organisation_name => Rails.configuration.branding[:organisation][:name]} %>
 			<div class="screencast_home_page">
 				<p><%= _('Screencast on how to use %{application_name}') % {:application_name => Rails.configuration.branding[:application][:name]} %></p>
 				<div class="clear"></div>

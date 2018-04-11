@@ -2874,3 +2874,6 @@ msgstr "Cela signifie que vous pouvez rédiger et modifier le plan de manière c
 
 msgid "This means you can write and edit the plan in a collaborative manner. You can also grant rights to other collaborators."
 msgstr "Cela signifie que vous pouvez rédiger et modifier le plan de manière collaborative. Vous pouvez également attribuer des droits à d'autres collaborateurs."
+
+msgid "<p>%{application_name} is provided by the <strong>%{organisation_name}</strong> to help you write data management plans.</p>"
+msgstr "<p>%{application_name} est mis à disposition par l'<strong>%{organisation_name}</strong> pour vous aider dans la rédaction de plans de gestion de données.</p>"

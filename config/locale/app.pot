@@ -1769,3 +1769,6 @@ msgstr ""
 
 msgid "This means you can write and edit the plan in a collaborative manner. You can also grant rights to other collaborators."
 msgstr ""
+
+msgid "<p>%{application_name} is provided by the <strong>%{organisation_name}</strong> to help you write data management plans.</p>"
+msgstr ""

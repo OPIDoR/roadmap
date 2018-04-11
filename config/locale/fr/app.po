@@ -1957,7 +1957,7 @@ msgid "Preview"
 msgstr "Aperçu"
 
 msgid "Primary research organisation"
-msgstr "Organisme de recherche prinicpal"
+msgstr "Organisme de recherche principal"
 
 # espace autour de /?
 msgid "Principal Investigator / Researcher"

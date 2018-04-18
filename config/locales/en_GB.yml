@@ -363,7 +363,6 @@ en_GB:
     sign_up_text: "New to %{application_name}? Sign up today."
     signed_in: "Signed in as "
     institution_sign_in_link: "Or, sign in with your institutional credentials"
-    institution_sign_in: " (UK users only)"
 
     user_name: "Email address"
     email: "Email"

@@ -291,7 +291,6 @@ fr:
     signed_in: "Connecté en tant que "
     institution_sign_in_link: "ou, connectez-vous avec votre authentifiant détablissement"
     #Voir dans la doc shibboleth : authentifiant détablissement ?
-    institution_sign_in: " (réservé aux utilisateurs britanniques)"
 
     user_name: "Adresse courriel"
     email: "Courriel"
@@ -601,128 +600,6 @@ Sélectionnez votre format et cliquez sur Exporter.</p>"
           unknown_key: "Réglage de mise en forme"
           invalid_max_pages: "Nombre de pages maxi non valide"
 
-  about_page:
-    title: "À propos de DMPonline"
-    tab_1: "Contexte"
-    tab_2: "Dernières nouvelles"
-    
-    body_text_tab_1_html: "<p>De plus en plus, les agences de financement exigent que leurs bénéficiaires proposent des DMP (des plans de gestion de données), tant pendant la préparation de leur soumission qu’après l’attribution de la subvention. Le Digital Curation Centre (Centre de curation numérique britannique - DCC) a élaboré DMPonline pour satisfaire cette exigence, ainsi que leur établissement ou tout autre acteur.</p>
-    <p>Le DCC <a href=http://www.dcc.ac.uk/ target=_blank>DCC</a> a coopéré étroitement avec des agences de financement de la recherche et des universités pour réaliser au profit des chercheurs un outil les assistant dans l’élaboration dun DMP (un plan de gestion de données) efficace qui couvre le cycle de vie complet d’un projet de recherche, de l’étape de préparation de sa soumission jusqu’à son achèvement.</p>
-    </br>
-    <h3>Fonctionnement de loutil</h3>
-    <p>Loutil comprend un certain nombre de modèles qui sont représentatifs des prescriptions de différents organismes financeurs et établissements. Au départ, les utilisateurs doivent répondre à trois questions pour que nous puissions déterminer le modèle quil convient dafficher(par ex. : le modèle ESRC pour une soumission dans le cadre dun appel à projet de lESRC). Des conseils vous sont fournis pour vous permettre dinterpréter les questions posées et y répondre. Ces conseils sont fournis selon les agences de financement, universités et disciplines.</p>
-    </br>
-    <h3>Pour commencer...</h3>
-    <p>Si vous possédez un compte, veuillez vous connecter, puis commencez à créer ou modifier votre DMP.</p>
-    <p>En labsence de compte DMPonline , cliquez sur <a href=\"/\">Senregistrer</a> en page daccueil.</p>
-    <p>Visitez la page d<a href=\"/%{current_locale}/help\">Aide</a> pour quelques conseils.</p>
-    </br>
-    <h3>Autres informations</h3>
-    <p>NOus améliorons constamment linterface utilisateur de DMPonline et ses fonctionnalités.
-    Si vous souhaitez apporter une contribution par un retour ou des suggestions, veuillez nous contacter par courriel :    <a href=mailto:dmponline@dcc.ac.uk?Subject=DMPonline%20inquiry target=_top>dmponline@dcc.ac.uk</a>. Vous pouvez aussi signaler des dysfonctionnements ou demander dautres fonctionnalités directement sur <a href=https://github.com/DigitalCurationCentre/DMPonline_v4 target=_top>GitHub</a></p>
-    <p>Si vous voulez consulter des DMP issus dune version antérieure de cette outil, visitez <a href=https://dmponline3.dcc.ac.uk target=_top>DMPonline v3</a>.</p>"
-
-    body_text_tab_2_html: "<p>Témoignages sur DMPonline depuis le site web du DCC</p></br>"
-
-  help_page:
-    title: "Aide"
-    tab_1: "À propos de DMPonline"
-    tab_2: "À propos de la réalisation dun plan de gestion de données (DMP)"
-    body_text_tab_2_html: "<h3>Ressources utiles pour programmer un DMP</h3>
-      <ul class=help_ul>
-        <li>
-          <a target=_blank href=http://www.dcc.ac.uk/resources/data-management-plans/funders-requirements>Prescriptions des agences de financement britanniques pour les DMP</a> [webpage]<br />
- Un récapitulatif des prescriptions des Conseils de recherche, des sociétés philanthropiques ou des organismes financeurs dans le secteur de la santé au Royaume-Uni.
-        </li>
-        <li>
-          <a target=_blank href=https://dmp.cdlib.org/pages/funder_requirement>Prescriptions des agences de financements américaines pour les DMP</a> [webpage]<br />
-  Un récapitulatif des prescriptions de la NSF, des NIH et dautres baillaurs de fonds importants aux États-Unis.
-        </li>
-        <li>
-          <a target=_blank href=http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP_Checklist_2013.pdf>Checklist du DCC pour les DMP</a> [PDF, 3 pages]<br />
- Une liste de 13 questions et de conseils associés, qui représentent les principales problématiques qui se présentent dans la gestion et le partage de DMP. Cette liste sert de modèle générique pour DMPOnline, cette liste est proposée quand aucune prescription financière ou organisationnelle ne simpose à lutilisateur.
-        </li>
-        <li>
-          <a target=_blank href=http://www.dcc.ac.uk/sites/default/files/documents/publications/reports/guides/How%20to%20Develop.pdf>Comment élaborer un plan de gestion et de partage de données</a> [PDF, 8 pages]<br />Un Guide du DCC (Digital Curation Centre) qui brosse un tableau général des prescriptions des organismes financeurs pour les DMP et le type de réflexions à entreprendre quand lon projette de présenter un projet<data.bris.ac.uk/research/planning/files/2013/08/data.bris-AHRC-example-Technical-Plan-v2.pdf>Technical plan submitted to the AHRC</a> [PDF, 7 pages]<br />
-  Un DMP présenté par un chercheur de lUniversité de Bristol, avec les commentaires des auditeurs.
-      </li>
-      <li>
-        <a target=_blank href=http://www.dcc.ac.uk/sites/default/files/documents/adocs/Leeds-RoaDMaP-DMPs.pdf>Deux DMP en Sciences sociales</a> [PDF, 7 pages]<br />
-  Exemples de  plans réalisés par des chercheurs de lUniversité de Leeds, partagés dans le cadre des supports de formation Leeds RoaDMaP
-      </li>
-      <li>
-        <a target=_blank href=http://relu.data-archive.ac.uk/data-sharing/planning/examples>Examples en Economie rurale et aménagement du territoire (Rural Economy & Land Use - RELU)</a> [webpage]<br />
-  Exemples provenant dun programme conjoint ESRC, BBSRC et NERC
-      </li>
-      <li>
-        <a target=_blank href=http://www.northumbria.ac.uk/static/5007/ceispdf/dmpfull.pdf>DMP en Scanté et médecine</a> [PDF, 11 pages]<br />
-  Exemple de DMP par le projet de formation à la gestion de données en Santé DATUM
-      </li>
-      <li>
-        <a target=_blank href=http://www.dcc.ac.uk/sites/default/files/documents/adocs/DMTpsych-example-DMP.pdf>Psychology DMP</a> [PDF, 11 pages]<br />
-  Un DMP fictif très détaillé en psychologie élaboré par le projet pédagogique DMTpsych RDM, à partir de travaux expérimentaux précurseurs
-      </li>
-      <li>
-        <a target=_blank href=http://rci.ucsd.edu/data-curation/examples.html>Exemples de DMP de lUniversité de San Diego</a> [webpage]<br />
-  Un vingtaine dexemple de DMP proposé à la <i>National Science Foundation</i> (NSF) aux États-Unis par des enseignants chercheurs de lUniversité de Californie à San Diego
-      </li>
-      <li>
-        <a target=_blank href=http://inside.mines.edu/RDS-example-plans>Exemples de LÉcole des Mines du Colorado (<i>Colorado School of Mines examples</i>)</a> [webpage]<br />
-  Plusieurs exemples de DMP américain de cette École et dautres établissements
-      </li>
-      <li>
-        <a target=_blank href=https://www.dataone.org/data-management-planning>DMP de la NSF</a> [webpage]<br />
-  5 DMP soumis à la NSF, partagés par la <i>DataOne initiative</i>
-      </li>
-      <li>
-        <a target=_blank href=http://library.umassmed.edu/necdmc/dmp>DMP en biologie et en chimie</a> [webpage]<br />
-  Trois exemples de DMP américains partagés par NECDMC, un outil pédagogique pour la formation à la gestion de données de recherche détudiants de niveaux L, M et en recherche en sciences, technologies et médecine.
-      </li>
-    </ul>
-    <h3>Guides utiles sur la gestion des données de la recherche en général</h3>
-    <ul class=help_ul>
-      <li>
-        <a target=_blank href=http://www.data-archive.ac.uk/media/2894/managingsharing.pdf>Managing and Sharing Data: best practice for researchers</a> [PDF, 36 pages]<br />
-  Un guide édité par le <i>UK Data Service</i> abordant une série de sujets, dont les formats et description de données, les questions déthique, de droit dauteur et de partage des données.
-      </li>
-      <li>
-        <a target=_blank href=http://www.dcc.ac.uk/sites/default/files/documents/publications/reports/guides/How_to_Cite_Link.pdf>How to Cite Datasets and Link to Publications</a> [PDF, 12 pages]<br />
-  Un guide édité par le <i>Digital Curation Centre</i> (Centre de curation numérique britannique - DCC) contenant des recommandations pratiques sur la manière de citer des données et signalant les différents outils et infrastructures de référencement de données.
-      </li>
-      <li>
-        <a target=_blank href=http://www.dcc.ac.uk/sites/default/files/documents/publications/reports/guides/How_To_License_Research_Data.pdf>How to License Research Data</a> [PDF, 16 pages]<br />
-  Un guide édité par le <i>Digital Curation Centre</i> (Centre de curation numérique britannique - DCC) qui rend compte des différents types de licences, des points positifs et négatifs de chacune et comment les mettre en place.
-      </li>
-      <li>
-        <a target=_blank href=http://www.dcc.ac.uk/sites/default/files/documents/How%20to%20Appraise%20and%20Select%20Research%20Data.pdf>How to Appraise and Select Research Data for Curation</a> [PDF, 8 pages]<br />
-  Un guide diffusé par lANDS et le DCC sur les méthodes de sélection des données à retenir pour leur conservation à long terme, leur partageet leur réutilisation. Plusieurs critères sont proposés pour faciliter la prise de décision.
-      </li>
-      <li>
-        <a target=_blank href=http://datalib.edina.ac.uk/mantra>Research Data MANTRA</a> [online resource]<br />
-  Un cours en ligne destiné aux chercheurs ou dautres acteurs désireux de gérer des données dans le cadre de leurs opérations de recherche. Ce cours comporte un certain nombre de considérations dordre pratique dans le domaine logiciel, sur lutilisation de SPSS, R, ArcGIS et NVivo.
-      </li>
-    </ul>"
-
-    body_text_tab_1_html: "<p>Quand vous vous connectez à DMPonline, vous êtes redirigé vers la page intitulées Mes plans. À partir de là, vous pouvez éditer, partager, exporter ou supprimer lun de vos plans. Vous verrez à cet endroit aussi les plans que dautres ont partagé avec vous.</p>
-    <h3>Créer un plan</h3>
-    <p>Pour créer un plan, cliquez sur le bouton Créer un plan depuis votre page Mes plans ou depuis le menu du haut. Sélectionnez les options des menus déroulants et parmi les cases à cocher pour définir les questions et les conseils qui devront vous être proposés. Confirmez vos choix en cliquant sur Oui, créer un plan.</p>
-    <h3>Rédigez votre plan</h3>
-    <p>Linterface sous forme donglets vous permet de naviguer dune fonction à lautre quand vous écrivez et mettez à jour votre plan.</p>
-    <ul>
-      <li>- Longlet Détails du plan donne quelques informations administratives élémentaires, indique sur quel ensemble de questions et de conseils il sappuie et des indications générales sur les questions qui vous seront posées.</li>
-      <li>- Le ou les onglets suivants affiche les questions auxquelles il faudra répondre. Cet écran peut afficher plusieurs onglets si votre agence de financement ou votre université vous demande plusieurs séries de questions selon différentes étapes, par ex. :au moment dune demande de subvention ou après son attribution.</li>
-      <li>- Longlet Partager vous sert à inviter dautres personnes à lire ou contribuer à votre plan.</li>
-      <li>- Longlet Exporter vous permet de décharger votre plan sous différents formats. Cela peut vous être utile pour présenter votre plan dans le cadre dune demande de subvention.</li>
-    </ul>
-    <p>Quand les différents onglets saffichent, ils montrent les différentes parties de votre plan à lécran. Cliquez pour répondre aux différentes questions. Vous pouvez mettre en forme vos réponses en utilisant les boutons de mise à jour.</p>
-    <p>Des conseils peuvent safficher dans le panneau de droite. Cliquez sur le symbole + pour quils apparaissent.</p>
-    <p>Pensez à enregistrer vos réponses avant de poursuivre.</p>
-    <h3>Partager des plans</h3>
-    <p>Insérez les courriels des collaborateurs que vous souhaitez inviter à lire ou modifier votre plan. Utilisez les options du menu déroulant pour leur attribuer les droits souhaités et cliquez sur Ajouter le collaborateur</p>
-    <h3>Exporter des plans</h3>
-    <p>À cet endroit vous pouvez décharger votre plans dans différents formats. Cela peut vous servir pour présenter votre plan dans le cadre dune demande de subvention. Choisissez le format de visualisation ou de déchargement souhaité puis cliquer pour lancer lexport. Quand vous vous connecterez à DMPonline, celui-ci vous dirigera vers votre page Mes plans. Vous pourrez modifier, partager, exporter ou supprimer lun ou lautre de vos plans. Vous verrez aussi les plans que dautres ont partagé avec vous.</p>
-    <h3>Données dhéritage</h3>
-    <p>Sil vous faut accéder à des plans provenant de la version antérieure de cet outil, veuillez aller sur <a href=https://dmponline3.dcc.ac.uk target=_top>DMPonline v3</a>.</p>"
 
   contact_page:
     title: "Contatez-nous"
@@ -788,41 +665,7 @@ Sélectionnez votre format et cliquez sur Exporter.</p>"
     <h3>Soutenir nos travaux</h3>
     <p>Nous sommes impressionné par la montée en lutilisation de DMPonline au Royaume-Uni comme à minternational et nous souhaitons vivement savoir comment vous utilisez cet outil, comment vous promouvez son utilisation dans votre environnement. Nous savons que dautres que nous ont mis en place des programmes de formation, créé des supports dassistance et de conseils et militent pour son utilisation. Veuillez nous le faire savoir, car cela nous permet den montrer limpact.</p>
     <p>Nous réfléchissons actuellement sur des solutions pour créer des moyens de financement. Cela nous permettra de répondre plus efficacement à une demande montante et de garantir la pérennité de DMPonline. Des projets seront bientôt rendus publics en consultation, mais nous accueillons volontiers vos suggestions pour soutenir au mieux nos travaux.</p> "
-    
-  terms_page:
-    title: "Conditions dutilisation"
-    body_text_html: "<div class=white_background>
-    <p>Le <i>Digital Curation Centre</i> (Centre de curation numérique britannique - DCC) est un consortium porté par le Jisc et installé dans les université dÉdimbourg, de Glasgow et de Bath. Nos missions concernent au premier chef la communauté de recherche britannique, en particulier le secteur de lenseignement supérieur et de la formation tout au long de la vie.</p>
-    </div>
-    <h3>DMPonline</h3>
-    <div class=white_background>
-      <p>DMPonline (loutil, le système) est une ressource partagée pour la communauté de recherche développée par le DCC. Elle est hébergée par luniversité dÉdimbourg.</p>
-    </div>
-    <h3>Vos informations personnelles</h3>
-    <div class=white_background>
-      <p>Pour pouvoir identifier et administrer votre compte dans DMPonline, nous avons besoin denregistrer votre adresse de courriel. Il se peut que nous lutilisions aussi pour recueillir votre avis sur lutilisation de cet outil, ou de vous informer des dernières évolutions ou versions. Ces informations pourront être échangées entre institutions partenaires du DCC mais uniquement à des fins légitimes pour le DCC. Nous ne vendrons, ni ne louerons ni néchangerons les informations personnelles que vous nous fournirez.</p>
-    </div>
-    <h3>Protections des données à caractère personnel</h3>
-    <div class=white_background>
-      <p>Les informations que vous enregistrez dans le système ne peuvent être visualisées que par vous-même, par les personnes avec lesquelles vous avez décidé den partager laccès, et - uniquement pour la maintenance du service - pour les administrateurs du système de luniversité dÉdimbourg.  Nous extrayons des informations anonymisées, automatiquement et sous forme agrégée à partir des DMP, mais nous naccédons pas à votre contenu directement, ni ne lutilisons ni le partageons avec des tiers sans autorisation de votre part. Des agents habilités de votre établissement daffiliation pourront avoir accès à vos DMP dans des conditions précises, par ex. :pour vérifier le respect des prescriptions de létablissement ou dagences de financement ou pour calculer les besoins de stockage.</p>
-    </div>
-    <h3>Liberté dinformation</h3>
-    <div class=white_background>
-      <p>Luniversité dÉdimbourg assure le stockage de vos DMP pour votre compte, mais ceux-ci restent votre propriété et sous votre responsabilité. Toute demande au titre de la législation sur la liberté dinformation se verra redirigée vers votre établissement daffiliation.</p>
-    </div>
-    <h3>Mots de passe</h3>
-    <div class=white_background>
-      <p>Votre mot de passe est enregistré sous forme chiffrée et ne peut être récupéré. En cas doubli, celui-ci devra être réinitialisé.</p>
-    </div>
-    <h3>Cookies</h3>
-    <div class=white_background>
-      <p>Veuillez noter que DMPonline utilise des cookies. Vous pourrez en savoir plus sur les cookies et la manière dont nous les utilisons sur le <a target=_blank href=http://www.dcc.ac.uk/about-us/about-site/website-terms-use/cookies>site web principal du DCC</a>.</p>
-    </div>
-
-    <br />
-    <div class=white_background>
-    <p>En utilisant loutil, vous reconnaissez avoir pris connaissance et accepté les présentes conditions dutilisation.</p></div>"
-
+  
   identifier_schemes:
     connect_success: 'Votre compte a été connecté à %{scheme}'
     connect_failure: 'Nous ne pouvions pas connecter votre compte %{scheme}'

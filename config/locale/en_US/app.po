@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: app 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2018-06-14 10:58:56-0700\n"
+"PO-Revision-Date: 2018-06-20 16:23:24-0700\n"
 "Last-Translator: Brian Riley brian.riley@ucop.edu\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_US\n"
@@ -1499,8 +1499,8 @@ msgstr ""
 msgid "Principal Investigator / Researcher"
 msgstr ""
 
-msgid "Principal investigator"
-msgstr ""
+#msgid "Principal investigator"
+#msgstr ""
 
 msgid "Privacy statement"
 msgstr ""
@@ -1706,8 +1706,12 @@ msgstr ""
 msgid "See the full list"
 msgstr ""
 
-msgid "See the full list of participating organisations"
+#, fuzzy
+msgid "See the full list of participating institutions"
 msgstr ""
+
+#msgid "See the full list of participating organisations"
+#msgstr ""
 
 msgid "See the full list of partner institutions."
 msgstr ""
@@ -1721,11 +1725,11 @@ msgstr ""
 msgid "Select an organisation from the list."
 msgstr "Select an organization from the list."
 
-msgid "Select one or more themes that are relevant to this guidance. This will display your generic organisation-level guidance, as well as that from other sources e.g. the %{org_name} guidance or any Schools/Departments that you provide guidance for."
-msgstr "Select one or more themes that are relevant to this guidance. This will display your generic organization-level guidance, as well as that from other sources e.g. the %{org_name} guidance or any Schools/Departments that you provide guidance for."
-
 msgid "Select one or more themes that are relevant to this question. This will allow similarly themed organisation-level guidance to appear alongside your question."
 msgstr "Select one or more themes that are relevant to this question. This will allow similarly themed organization-level guidance to appear alongside your question."
+
+msgid "Select one theme that is relevant to this guidance. This will display your generic organisation-level guidance, or any Schools/Departments for which you create guidance groups, across all templates that have questions with the corresponding theme tags."
+msgstr "Select one theme that is relevant to this guidance. This will display your generic organization-level guidance, or any Schools/Departments for which you create guidance groups, across all templates that have questions with the corresponding theme tags."
 
 msgid "Select phase to download"
 msgstr ""
@@ -1827,6 +1831,10 @@ msgid "Successfully %{action} %{username}'s account."
 msgstr ""
 
 msgid "Successfully %{action} your %{object}."
+msgstr ""
+
+#, fuzzy
+msgid "Successfully changed the permissions for #{@role.user.email}. They have been notified via email."
 msgstr ""
 
 msgid "Successfully deleted your theme"

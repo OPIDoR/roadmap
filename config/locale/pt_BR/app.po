@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: app 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2018-06-14 10:58:56-0700\n"
+"PO-Revision-Date: 2018-06-20 16:23:24-0700\n"
 "Last-Translator: Benilton de Sá Carvalho benilton@unicamp.br\n"
 "Language-Team: Portugues do Brasil\n"
 "Language: pt_BR\n"
@@ -1500,8 +1500,8 @@ msgstr "Investigador Principal"
 msgid "Principal Investigator / Researcher"
 msgstr "Investigador / Pesquisador Principal"
 
-msgid "Principal investigator"
-msgstr "Investigador principal"
+#msgid "Principal investigator"
+#msgstr "Investigador principal"
 
 msgid "Privacy statement"
 msgstr "Política de privacidade"
@@ -1707,8 +1707,12 @@ msgstr "Verificação de segurança"
 msgid "See the full list"
 msgstr "Veja a lista completa"
 
-msgid "See the full list of participating organisations"
-msgstr "Veja a lista completa de organizações participantes"
+#, fuzzy
+msgid "See the full list of participating institutions"
+msgstr ""
+
+#msgid "See the full list of participating organisations"
+#msgstr "Veja a lista completa de organizações participantes"
 
 msgid "See the full list of partner institutions."
 msgstr "Veja a lista completa de instituições parceiras"
@@ -1722,11 +1726,11 @@ msgstr "Selecionar tudo"
 msgid "Select an organisation from the list."
 msgstr "Selecione uma organização da lista."
 
-msgid "Select one or more themes that are relevant to this guidance. This will display your generic organisation-level guidance, as well as that from other sources e.g. the %{org_name} guidance or any Schools/Departments that you provide guidance for."
-msgstr "Selecione um ou mais temas relevantes para estas instruções. Serão exibidas instruções genéricas no âmbito de sua organização e de outras fontes, e.g. as instruções %{org_name} ou de quaisquer faculdades ou departamentos para os quais você produz instruções. "
-
 msgid "Select one or more themes that are relevant to this question. This will allow similarly themed organisation-level guidance to appear alongside your question."
 msgstr "Selecione um ou mais temas relevantes para esta pergunta. Isso permitirá que sejam exibidas, junto com sua pergunta, instruções com temas similares no âmbito de sua organização."
+
+msgid "Select one theme that is relevant to this guidance. This will display your generic organisation-level guidance, or any Schools/Departments for which you create guidance groups, across all templates that have questions with the corresponding theme tags."
+msgstr "Selecione um tema relevante para esta instruções. Isso exibirá sua instruções genérica em nível de organização ou quaisquer Escolas/Departamentos para os quais você criar grupos de instruções em todos os modelos que tiverem perguntas com as tags de tema correspondentes."
 
 msgid "Select phase to download"
 msgstr "Selecione a fase a ser baixada"
@@ -1829,6 +1833,10 @@ msgstr "Successo ao %{action} conta do %{username}"
 
 msgid "Successfully %{action} your %{object}."
 msgstr "Sucesso ao %{action} seu %{object}."
+
+#, fuzzy
+msgid "Successfully changed the permissions for #{@role.user.email}. They have been notified via email."
+msgstr ""
 
 msgid "Successfully deleted your theme"
 msgstr "Seu tema foi apagado com sucesso"

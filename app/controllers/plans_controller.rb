@@ -360,7 +360,7 @@ class PlansController < ApplicationController
   def set_test
     plan = Plan.find(params[:id])
     authorize plan
-    plan.visibility = (params[:is_test] === "1" ? :is_test : :privately_visible)
+    plan.visibility = (params[:is_test] === "1" ? :is_test : :privately_private_visible)
     if plan.save
       render json: {code: 1, msg: (plan.is_test? ? _('Your project is now a test.') : _('Your project is no longer a test.') )}
     else

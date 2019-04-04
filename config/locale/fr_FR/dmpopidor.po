@@ -165,6 +165,9 @@ msgstr "Vous"
 msgid "Your organisation"
 msgstr "Votre organisme"
 
+msgid "No organisation"
+msgstr "Aucun organisme"
+
 msgid "Other organisation"
 msgstr "Autre organisme"
 

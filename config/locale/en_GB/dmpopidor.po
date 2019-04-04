@@ -166,6 +166,9 @@ msgstr "You"
 msgid "Your organisation"
 msgstr "Your organisation"
 
+msgid "No organisation"
+msgstr "No organisation"
+
 msgid "Other organisation"
 msgstr "Other organisation"
 

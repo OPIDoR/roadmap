@@ -56,7 +56,7 @@ $(() => {
             $(`#answer-locking-${data.question.id}-research-output-${data.research_output.id}`).html('');
             $(`#answer-form-${data.question.id}-research-output-${data.research_output.id} .answer_id`).val(data.answer.id);
             if (isNumber(data.question.answer_lock_version)) {
-              form.find('#answer_lock_version').val(data.question.answer_lock_version);
+              form.find('.answer_lock_version').val(data.question.answer_lock_version);
             }
           }
         }
@@ -275,7 +275,6 @@ $(() => {
       Tinymce.destroyEditorById(`${$(editor).attr('id')}`);
     });
   });
-  // dd
   $('.research_outputs_tabs a[data-toggle="tab"]').on('shown.bs.tab', (e) => {
     const researchOutputId = $(e.target).data('research-output');
     const tabsList = $(`.research_outputs_tabs a[data-research-output="${researchOutputId}"]`);

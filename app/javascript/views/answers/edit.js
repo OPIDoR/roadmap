@@ -5,6 +5,7 @@ import {
 } from '../../utils/isType';
 import { Tinymce } from '../../utils/tinymce.js.erb';
 import debounce from '../../utils/debounce';
+import { updateSectionProgress, getQuestionDiv } from '../../utils/sectionUpdate';
 import datePicker from '../../utils/datePicker';
 import TimeagoFactory from '../../utils/timeagoFactory';
 
@@ -17,6 +18,17 @@ $(() => {
   const isStale = jQuery => jQuery.closest('.question-form').find('.answer-locking').text().trim().length !== 0;
   const isReadOnly = () => $('.form-answer fieldset:disabled').length > 0;
   const toolbar = 'bold italic | bullist numlist | link | table';
+  const showOrHideQuestions = (data) => {
+    data.section_data.forEach((section) => {
+      updateSectionProgress(section.sec_id, section.no_ans, section.no_qns);
+    });
+    data.qn_data.to_hide.forEach((questionid) => {
+      getQuestionDiv(questionid).slideUp();
+    });
+    data.qn_data.to_show.forEach((questionid) => {
+      getQuestionDiv(questionid).slideDown();
+    });
+  };
   /*
    * A map of debounced functions, one for each input, textarea or select change at any
    * form with class form-answer. The key represents a question id and the value holds
@@ -66,20 +78,7 @@ $(() => {
           $('.progress').html(data.plan.progress);
         }
       }
-      /* if (isObject(data.section)) { // Object related to section within data received
-        if (isNumber(data.section.id)) {
-          if (isString(data.section.progress)) {
-            $(`.section-progress-${data.section.id}`).html(data.section.progress);
-          }
-        }
-      } */
-      // Update answer id hidden field from data received
-      // Object related to answer within data received
-      if (isObject(data.answer) && isObject(data.question)) {
-        if (isNumber(data.answer.id) && isNumber(data.question.id)) {
-          $(`#answer-form-${data.question.id}`).find('#answer_id').val(data.answer.id);
-        }
-      }
+      showOrHideQuestions(data);
     }
   };
   const failCallback = (error, jQuery) => {

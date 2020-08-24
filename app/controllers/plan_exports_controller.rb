@@ -5,6 +5,8 @@ class PlanExportsController < ApplicationController
   prepend Dmpopidor::Controllers::PlanExports
   after_action :verify_authorized
 
+  include ConditionsHelper
+
   # SEE MODULE
   def show
     @plan = Plan.includes(:answers).find(params[:plan_id])

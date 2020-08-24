@@ -12,6 +12,11 @@
 #
 # Indexes
 #
+#  fk_rails_189ad2e573  (identifier_scheme_id)
+#  fk_rails_36323c0674  (org_id)
+#
+# Foreign Keys
+#
 #  org_identifiers_identifier_scheme_id_idx  (identifier_scheme_id)
 #  org_identifiers_org_id_idx                (org_id)
 #

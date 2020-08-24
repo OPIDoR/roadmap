@@ -13,8 +13,13 @@
 #
 # Indexes
 #
-#  notes_answer_id_idx  (answer_id)
-#  notes_user_id_idx    (user_id)
+#  fk_rails_7f2323ad43       (user_id)
+#  index_notes_on_answer_id  (answer_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (answer_id => answers.id)
+#  fk_rails_...  (user_id => users.id)
 #
 
 class Note < ActiveRecord::Base

@@ -11,8 +11,13 @@
 #
 # Indexes
 #
-#  user_identifiers_identifier_scheme_id_idx  (identifier_scheme_id)
-#  user_identifiers_user_id_idx               (user_id)
+#  fk_rails_fe95df7db0                (identifier_scheme_id)
+#  index_user_identifiers_on_user_id  (user_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (identifier_scheme_id => identifier_schemes.id)
+#  fk_rails_...  (user_id => users.id)
 #
 
 class UserIdentifier < ActiveRecord::Base

@@ -18,10 +18,14 @@
 #
 # Indexes
 #
-#  index_questions_on_structured_data_schema_id  (structured_data_schema_id)
-#  index_questions_on_versionable_id             (versionable_id)
-#  questions_question_format_id_idx              (question_format_id)
-#  questions_section_id_idx                      (section_id)
+#  fk_rails_4fbc38c8c7                (question_format_id)
+#  index_questions_on_section_id      (section_id)
+#  index_questions_on_versionable_id  (versionable_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (question_format_id => question_formats.id)
+#  fk_rails_...  (section_id => sections.id)
 #
 
 FactoryBot.define do

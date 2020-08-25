@@ -8,12 +8,19 @@ module Dmpopidor
             unless current_user.present? && current_user.can_org_admin?
               raise Pundit::NotAuthorizedError
             end
+            #check if current user if super_admin
+            @super_admin = current_user.can_super_admin?
+            @clicked_through = params[:click_through].present?
+            plans = @super_admin ? Plan.all : current_user.org.plans.where.not(visibility: [
+                                                Plan.visibilities[:privately_visible],
+                                                Plan.visibilities[:is_test]
+                                              ])
+            plans = plans.joins(:template, roles: [user: :org]).where(Role.creator_condition)
+            
             paginable_renderise(
               partial: "org_admin",
-              scope: current_user.org.plans.where.not(visibility: [
-                Plan.visibilities[:privately_visible],
-                Plan.visibilities[:is_test]
-              ]),
+              scope: plans,
+              view_all: !current_user.can_super_admin?,
               query_params: { sort_field: 'plans.updated_at', sort_direction: :desc }
             )
           end

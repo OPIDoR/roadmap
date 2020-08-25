@@ -15,7 +15,9 @@ module Dmpopidor
         hash[:affiliation] += self.owner.present? && self.owner.department ? ", #{self.owner.department.name}" : ""
     
         # set the funder name
-        hash[:funder] = self.funder_name.present? ? self.funder_name :  ""
+        hash[:funder] = self.funder.name if self.funder.present?
+        template_org = self.template.org
+        hash[:funder] = template_org.name if !hash[:funder].present? && template_org.funder?
     
         # set the template name and customizer name if applicable
         hash[:template] = self.template.title

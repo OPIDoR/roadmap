@@ -10,17 +10,22 @@ module Dmpopidor
 
           # Get all of the available funders and non-funder orgs
           @funders = Org.funder
+                        .includes(identifiers: :identifier_scheme)
                         .joins(:templates)
                         .where(templates: { published: true }).uniq.sort_by(&:name)
-          @orgs = (Org.organisation + Org.institution + Org.managing_orgs + Org.where(is_other: true)).flatten
-                                                                          .select { |org| org.active == true }
-                                                                          .uniq.sort_by(&:name)
+          @orgs = (Org.includes(identifiers: :identifier_scheme).organisation +
+                  Org.includes(identifiers: :identifier_scheme).institution +
+                  Org.includes(identifiers: :identifier_scheme).default_orgs)
+          @orgs = @orgs.flatten
+                  .select { |org| org.active == true }
+                  .uniq.sort_by(&:name)
 
           # Get the current user's org
           @default_org = current_user.org if @orgs.include?(current_user.org) || @funders.include?(current_user.org) 
 
           # Get the default template
           @default_template = Template.default
+          @plan.org_id = current_user.org&.id
 
           if params.key?(:test)
             flash[:notice] = "#{_('This is a')} <strong>#{_('test plan')}</strong>"
@@ -60,20 +65,6 @@ module Dmpopidor
                 format.html { redirect_to new_plan_path }
             end
           else
-          # Otherwise create the plan
-            if current_user.surname.blank?
-              @plan.principal_investigator = nil
-            else
-              @plan.principal_investigator = current_user.name(false)
-            end
-
-            @plan.principal_investigator_email = current_user.email
-
-            orcid = current_user.identifier_for(IdentifierScheme.find_by(name: "orcid"))
-            @plan.principal_investigator_identifier = orcid.identifier unless orcid.nil?
-
-            @plan.funder_name = plan_params[:funder_name]
-
             @plan.visibility = if plan_params["visibility"].blank?
                                 Rails.application.config.default_plan_visibility
                                else
@@ -92,9 +83,25 @@ module Dmpopidor
                 @plan.title = plan_params[:title]
             end
 
+            # bit of hackery here. There are 2 org selectors on the page
+            # and each is within its own specific context, plan.org or
+            # plan.funder which forces the hidden id hash to be :id
+            # so we need to convert it to :org_id so it works with the
+            # OrgSelectable and OrgSelection services
+            org_hash = plan_params[:org] || params[:org]
+            if org_hash[:id].present?
+              org_hash[:org_id] = org_hash[:id]
+              @plan.org = org_from_params(params_in: org_hash, allow_create: false)
+            end
+            funder_hash = plan_params[:funder] || params[:funder]
+            if funder_hash[:id].present?
+              funder_hash[:org_id] = funder_hash[:id]
+              @plan.funder = org_from_params(params_in: funder_hash, allow_create: false)
+            end
+
             if @plan.save
               # pre-select org's guidance and the default org's guidance
-              ids = (Org.managing_orgs << current_user.org_id << org_id).flatten.uniq
+              ids = (Org.default_orgs.pluck(:id) << current_user.org_id << org_id).flatten.uniq
               ggs = GuidanceGroup.where(org_id: ids, optional_subset: false, published: true)
 
               if !ggs.blank? then @plan.guidance_groups << ggs end
@@ -112,7 +119,7 @@ module Dmpopidor
                 # We used a customized version of the the funder template
                 # rubocop:disable Metrics/LineLength
                 msg += " #{d_('dmpopidor', 'This plan is based on the %{funder_name}: %{template_name} template with customisations by the %{org_name}') % { 
-                    funder_name: plan_params[:funder_name], 
+                    funder_name: @plan.funder&.name, 
                     template_name: @plan.template.title,
                     org_name: plan_params[:org_name] 
                 } }"# rubocop:enable Metrics/LineLength
@@ -160,8 +167,15 @@ module Dmpopidor
                                     params[:guidance_group_ids].map(&:to_i).uniq
                                   end
               @plan.guidance_groups = GuidanceGroup.where(id: guidance_group_ids)
-              @plan.save
-              if @plan.update_attributes(attrs)
+              
+              # TODO: For some reason the `fields_for` isn't adding the
+              #       appropriate namespace, so org_id represents our funder
+              funder = org_from_params(params_in: attrs, allow_create: true)
+              @plan.funder_id = funder.id if funder.present?
+              process_grant(hash: params[:grant])
+              attrs = remove_org_selection_params(params_in: attrs)
+
+              if @plan.update(attrs) #_attributes(attrs)
                 @plan.research_outputs.toggle_default
 
                 format.html do
@@ -182,10 +196,11 @@ module Dmpopidor
                 end
               end
 
-            rescue Exception
+            rescue Exception => e
               flash[:alert] = failure_message(@plan, _("save"))
               format.html do
-                render_phases_edit(@plan, @plan.phases.first, @plan.guidance_groups)
+                Rails.logger.error "Unable to save plan #{@plan&.id} - #{e.message}"
+                redirect_to "#{plan_path(@plan)}", alert: failure_message(@plan, _("save"))
               end
               format.json do
                 render json: { code: 0, msg: flash[:alert] }

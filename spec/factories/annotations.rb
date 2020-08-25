@@ -13,8 +13,8 @@
 #
 # Indexes
 #
-#  annotations_org_id_idx               (org_id)
-#  annotations_question_id_idx          (question_id)
+#  fk_rails_aca7521f72                  (org_id)
+#  index_annotations_on_question_id     (question_id)
 #  index_annotations_on_versionable_id  (versionable_id)
 #
 

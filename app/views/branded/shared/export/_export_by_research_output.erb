@@ -15,6 +15,9 @@
         <br>
       <% end %>
       <% section[:questions].each do |question| %>
+        <% if remove_list(@plan).include?(question[:id]) %> 
+          <% next %>
+        <% end %>
         <% answer = section_has_common_answers ? 
               @plan.answer(question[:id], false, research_output.get_main().id) : 
               @plan.answer(question[:id], false, research_output[:id]) %>

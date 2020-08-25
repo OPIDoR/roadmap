@@ -86,8 +86,34 @@ module Dmpopidor
               @section = @plan.sections.find_by(id: @question.section_id)
               template = @section.phase.template
               @research_output = @answer.research_output
+
+              remove_list_after = remove_list(@plan)
+
+              all_question_ids = @plan.questions.pluck(:id)
+              all_answers = @plan.answers
+              qn_data = {
+                to_show: all_question_ids - remove_list_after,
+                to_hide: remove_list_after
+              }
+
+              section_data = []
+              @plan.sections.each do |section|
+                next if section.number < @section.number
+                n_qs, n_ans = check_answered(section, qn_data[:to_show], all_answers)
+                this_section_info = {
+                  sec_id: section.id,
+                  no_qns: num_section_questions(@plan, section),
+                  no_ans: num_section_answers(@plan, section)
+                }
+                section_data << this_section_info
+              end
+
+              send_webhooks(current_user, @answer)
+              
               # rubocop:disable LineLength
               render json: {
+              "qn_data": qn_data,
+              "section_data": section_data,
               "answer" => {
                 "id" => @answer.id
               },
@@ -113,13 +139,6 @@ module Dmpopidor
                 }, formats: [:html]),
                 "answer_status" => render_to_string(partial: "answers/status", locals: {
                   answer: @answer
-                }, formats: [:html])
-              },
-              "section" => {
-                "id" => @section.id,
-                "progress" => render_to_string(partial: "/org_admin/sections/progress", locals: {
-                  section: @section,
-                  plan: @plan
                 }, formats: [:html])
               },
               "plan" => {

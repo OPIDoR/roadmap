@@ -155,7 +155,6 @@ class UserMailer < ActionMailer::Base
     end
   end
 
-<<<<<<< HEAD
   def anonymization_warning(user)
     @user = user
     @end_date = (@user.last_sign_in_at + 5.years).to_date
@@ -180,7 +179,6 @@ class UserMailer < ActionMailer::Base
     user.get_locale.nil? ? FastGettext.default_locale : user.get_locale
   end
   
-=======
   def api_credentials(api_client)
     @api_client = api_client
     if @api_client.contact_email.present?
@@ -190,5 +188,4 @@ class UserMailer < ActionMailer::Base
       end
     end
   end
->>>>>>> e391c74f090430585a2b9b56e2f0c665d03fe5f6
 end

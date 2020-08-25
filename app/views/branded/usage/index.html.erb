@@ -11,8 +11,6 @@
                      plan_count: @total_org_plans,
                      separators: @separators } %>
 
-<%= render partial: 'usage/filter' %>
-
 <% if @funder.present? %>
   <%= render partial: 'usage/template_statistics' %>
 <% else %>

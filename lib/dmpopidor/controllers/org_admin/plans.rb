@@ -15,6 +15,9 @@ module Dmpopidor
             .where('plans.feedback_requestor IN (?) AND plans.feedback_requested is TRUE AND roles.active is TRUE',
               current_user.org.users.pluck(:id).uniq).pluck(:plan_id)
           @feedback_plans = Plan.where(id: feedback_ids).reject{|p| p.nil?}
+          
+          @super_admin = current_user.can_super_admin?
+          @clicked_through = params[:click_through].present?
           @plans = current_user.org.plans.where.not(visibility: [Plan.visibilities[:privately_visible], Plan.visibilities[:is_test]]).page(1)
         end
 

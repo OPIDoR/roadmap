@@ -166,11 +166,7 @@ class OrgsController < ApplicationController
   end
 
   private
-<<<<<<< HEAD
   # SEE MODULE
-=======
-
->>>>>>> e391c74f090430585a2b9b56e2f0c665d03fe5f6
   def org_params
     params.require(:org)
           .permit(:name, :abbreviation, :logo, :contact_email, :contact_name,

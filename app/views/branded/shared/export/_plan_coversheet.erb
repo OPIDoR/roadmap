@@ -29,19 +29,12 @@
     <p><b><%= _("Project abstract: ") %></b></p>
     <div style="margin-left: 15px;"><%= sanitize(@plan.description) %></div><br>
   <% end %>
+  
+  <% @plan.contributors.investigation.each do |contributor| %>
+    <% orcid = contributor.identifier_for_scheme(scheme: "orcid") %>
+    <% next unless orcid.present? && orcid.value.present? %>
 
-  <% if @plan.principal_investigator.present? %>
-    <p><b><%= d_("dmpopidor", "Principal Investigator: ") %></b><%= @plan.principal_investigator %></p> <br>
-  <% end %>
-
-  <% if @plan.principal_investigator_identifier.present? %>
-    <p><b><%= _("ORCID iD: ") %></b><%= @plan.principal_investigator_identifier %></p> <br>
-  <% end %>
-
-  <% if @plan.data_contact.present? %>
-    <p><b><%= d_("dmpopidor", "Data Contact Person: ") %></b><%= @plan.data_contact %></p> <br>
-  <% elsif @plan.principal_investigator.present? %>
-    <p><b><%= d_("dmpopidor", "Data Contact Person: ") %></b><%= @plan.principal_investigator %></p> <br>
+    <p><b><%= _("ORCID iD: ") %></b><%= orcid.value_without_scheme_prefix %></p> <br>
   <% end %>
 
   <% if @hash[:research_outputs].length > 1 || !@hash[:research_outputs][0].main?%>

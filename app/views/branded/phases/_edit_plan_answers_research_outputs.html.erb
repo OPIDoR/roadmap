@@ -1,5 +1,5 @@
 <div class="tab-panels" role="tabpanel">
-  <div id="phase-#<%= phase.id %>-panel" class="tab-panel active" aria-hidden="false" aria-labelledby="phase-#<%= phase.id %>-tab">
+  <div id="phase-#<%= phase.id %>-panel" class="tab-panel active answering-phase" aria-hidden="false" aria-labelledby="phase-#<%= phase.id %>-tab">
     <div class="section-description">
       <div class="display-readonly-textarea-content">
         <%= sanitize phase.description %>
@@ -90,7 +90,7 @@
                     <!-- Answer Section -->
                     <div class="question-form">
                       <div id="<%= "answer-locking-#{question.id}-research-output-#{research_output.id}" %>" 
-                           class="answer-locking"></div>
+                        class="answer-locking"></div>
                       <div id="<%= "answer-form-#{question.id}-research-output-#{research_output.id}" %>" class="answer-form"> 
                         <%= render(partial: '/answers/new_edit',
                                    locals: { template: phase.template,
@@ -117,6 +117,9 @@
                       research_output: research_output,
                       guidance_presenter: guidance_presenter } %>
                   </div>
+                  <% if i != section.questions.length - 1 %>
+                    <hr>
+                  <% end %> 
                 </div>
                 <% if i != section.questions.length - 1 %>
                   <hr>

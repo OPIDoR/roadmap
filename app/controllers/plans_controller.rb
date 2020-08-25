@@ -42,11 +42,9 @@ class PlansController < ApplicationController
              Org.includes(identifiers: :identifier_scheme).default_orgs)
     @orgs = @orgs.flatten.uniq.sort_by(&:name)
 
-    # Get the current user's org
-    @default_org = current_user.org if @orgs.include?(current_user.org) || @funders.include?(current_user.org) 
-
     # Get the default template
     @default_template = Template.default
+    
     @plan.org_id = current_user.org&.id
 
     if params.key?(:test)
@@ -141,15 +139,9 @@ class PlansController < ApplicationController
 
         @plan.add_user!(current_user.id, :creator)
 
-<<<<<<< HEAD
-       # Set new identifier to plan id by default on create.
-       # (This may be changed by user.)
-       @plan.add_identifier!(@plan.id.to_s)
-=======
         # Set new identifier to plan id by default on create.
         # (This may be changed by user.)
         @plan.identifier = @plan.id.to_s
->>>>>>> e391c74f090430585a2b9b56e2f0c665d03fe5f6
 
         respond_to do |format|
           flash[:notice] = msg
@@ -440,22 +432,13 @@ class PlansController < ApplicationController
 
   def plan_params
     params.require(:plan)
-<<<<<<< HEAD
-          .permit(:org_id, :org_name, :funder_id, :funder_name, :template_id,
-                  :title, :visibility, :grant_number, :description, :identifier,
-                  :principal_investigator_phone, :principal_investigator,
-                  :principal_investigator_email, :data_contact,
-                  :principal_investigator_identifier, :data_contact_email,
-                  :data_contact_phone, :guidance_group_ids, 
-                  research_outputs_attributes: %i[id abbreviation fullname order pid other_type_label research_output_type_id _destroy])
-=======
           .permit(:template_id, :title, :visibility, :grant_number,
                   :description, :identifier, :guidance_group_ids,
                   :start_date, :end_date,
                   :org_id, :org_name, :org_crosswalk, :identifier,
                   org: [:org_id, :org_name, :org_sources, :org_crosswalk],
-                  funder: [:org_id, :org_name, :org_sources, :org_crosswalk])
->>>>>>> e391c74f090430585a2b9b56e2f0c665d03fe5f6
+                  funder: [:org_id, :org_name, :org_sources, :org_crosswalk], 
+                  research_outputs_attributes: %i[id abbreviation fullname order pid other_type_label research_output_type_id _destroy])
   end
 
   # different versions of the same template have the same family_id

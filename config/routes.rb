@@ -343,7 +343,6 @@ Rails.application.routes.draw do
   namespace :static do
     get ':name', to: 'static_pages#show'
   end
-  end
 
   # Old static page aliases
   get 'about_us', to: 'static/static_pages#show', name: 'about_us'

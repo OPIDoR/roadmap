@@ -3313,3 +3313,110 @@ msgstr "Is it a test plan ?"
 
 msgid "Sign in or Create account"
 msgstr "Sign in or Create account"
+
+msgid "Please list the project’s Principle Investigator(s) and those responsible for data management."
+msgstr "Please list the project’s Principle Investigator(s) and those responsible for data management."
+
+msgid "No contributors have been defined."
+msgstr "No contributors have been defined."
+
+msgid "Add a contributor"
+msgstr "Add a contributor"
+
+msgid "Contributors"
+msgstr "Contributors"
+
+msgid "New contributor"
+msgstr "New contributor"
+
+msgid "View all contributors"
+msgstr "View all contributors"
+
+msgid "Phone number"
+msgstr "Phone number"
+
+
+msgid "Affiliation"
+msgstr "Affiliation"
+
+
+msgid "Roles"
+msgstr "Roles"
+
+
+msgid "Phone numbers should only include numbers and dashes ('-')."
+msgstr "Phone numbers should only include numbers and dashes ('-')."
+
+
+msgid "Select each role that applies to the contributor."
+msgstr "Select each role that applies to the contributor."
+
+msgid "Editing contributor"
+msgstr "Editing contributor"
+
+msgid "This answer removes "
+msgstr "This answer removes "
+
+msgid " question(s) from your plan."
+msgstr " question(s) from your plan."
+
+msgid "This answer triggers email(s) to "
+msgstr "This answer triggers email(s) to "
+
+msgid "Api Clients"
+msgstr "Api Clients"
+
+msgid "Create Api Client"
+msgstr "Create Api Client"
+
+msgid "Manage API access for external applications"
+msgstr "Manage API access for external applications"
+
+msgid "New API Client"
+msgstr "New API Client"
+
+msgid "View all API clients"
+msgstr "View all API clients"
+
+msgid "Homepage"
+msgstr "Homepage"
+
+msgid "Contact Name"
+msgstr "Contact Name"
+
+msgid "Contact Email"
+msgstr "Contact Email"
+
+msgid "Client ID"
+msgstr "Client ID"
+
+msgid "Client Secret"
+msgstr "Client Secret"
+
+msgid "Last accessed on"
+msgstr "Last accessed on"
+
+msgid "Refresh client ID and secret"
+msgstr "Refresh client ID and secret"
+
+msgid "Email credentials to contact"
+msgstr "Email credentials to contact"
+
+msgid "Are you sure you want to delete the API client: \"%{name}\""
+msgstr "Are you sure you want to delete the API client: \"%{name}\""
+
+msgid "Editing API Client"
+msgstr "Editing API Client"
+
+msgid "Add Conditions"
+msgstr "Add Conditions"
+
+msgid "Add condition"
+msgstr "Add condition"
+
+msgid "Save this question before adding conditions."
+msgstr "Save this question before adding conditions."
+
+msgid "Discard "
+msgstr "Discard "
+

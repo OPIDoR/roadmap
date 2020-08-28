@@ -3332,3 +3332,104 @@ msgstr ""
 msgid "Sign in or Create account"
 msgstr ""
 
+msgid "Please list the project’s Principle Investigator(s) and those responsible for data management."
+msgstr ""
+
+msgid "No contributors have been defined."
+msgstr ""
+
+msgid "Add a contributor"
+msgstr ""
+
+msgid "Contributors"
+msgstr ""
+
+msgid "New contributor"
+msgstr ""
+
+msgid "View all contributors"
+msgstr ""
+
+msgid "Phone number"
+msgstr ""
+
+msgid "Affiliation"
+msgstr ""
+
+msgid "Roles"
+msgstr ""
+
+msgid "Phone numbers should only include numbers and dashes ('-')."
+msgstr ""
+
+msgid "Select each role that applies to the contributor."
+msgstr ""
+
+msgid "Editing contributor"
+msgstr ""
+
+msgid "This answer removes "
+msgstr ""
+
+msgid " question(s) from your plan."
+msgstr ""
+
+msgid "This answer triggers email(s) to "
+msgstr ""
+
+msgid "Api Clients"
+msgstr ""
+
+msgid "Create Api Client"
+msgstr ""
+
+msgid "Manage API access for external applications"
+msgstr ""
+
+msgid "New API Client"
+msgstr ""
+
+msgid "View all API clients"
+msgstr ""
+
+msgid "Homepage"
+msgstr ""
+
+msgid "Contact Name"
+msgstr ""
+
+msgid "Contact Email"
+msgstr ""
+
+msgid "Client ID"
+msgstr ""
+
+msgid "Client Secret"
+msgstr ""
+
+msgid "Last accessed on"
+msgstr ""
+
+msgid "Refresh client ID and secret"
+msgstr ""
+
+msgid "Email credentials to contact"
+msgstr ""
+
+msgid "Are you sure you want to delete the API client: \"%{name}\""
+msgstr ""
+
+msgid "Editing API Client"
+msgstr ""
+
+msgid "Add Conditions"
+msgstr ""
+
+msgid "Add condition"
+msgstr ""
+
+msgid "Save this question before adding conditions."
+msgstr ""
+
+msgid "Discard "
+msgstr ""

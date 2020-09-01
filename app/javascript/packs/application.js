@@ -43,7 +43,7 @@ import '../views/orgs/shibboleth_ds';
 import '../views/plans/download';
 import '../views/plans/edit_details';
 import '../views/plans/index';
-import '../views/plans/new';
+import '../views/branded/plans/new';
 import '../views/plans/research_outputs';
 import '../views/plans/share';
 import '../views/roles/edit';

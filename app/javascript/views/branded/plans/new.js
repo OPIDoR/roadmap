@@ -1,8 +1,8 @@
-import debounce from '../../utils/debounce';
-import { initAutocomplete } from '../../utils/autoComplete';
-import getConstant from '../../constants';
-import { isObject, isArray, isString } from '../../utils/isType';
-import { renderAlert, hideNotifications } from '../../utils/notificationHelper';
+import debounce from '../../../utils/debounce';
+import { initAutocomplete } from '../../../utils/autoComplete';
+import getConstant from '../../../constants';
+import { isObject, isArray, isString } from '../../../utils/isType';
+import { renderAlert, hideNotifications } from '../../../utils/notificationHelper';
 
 $(() => {
   const toggleSubmit = () => {
@@ -24,7 +24,6 @@ $(() => {
   // AJAX success function for available template search
   const success = (data) => {
     hideNotifications();
-
     if (isObject(data)
         && isArray(data.templates)) {
       // Display the available_templates section
@@ -35,16 +34,38 @@ $(() => {
         // If there is only one template, set the input field value and submit the form
         // otherwise show the dropdown list and the 'Multiple templates found message'
         if (data.templates.length === 1) {
+          const templateTitle = data.templates[0].title;
           $('#plan_template_id option').attr('selected', 'true');
           $('#multiple-templates').hide();
+          if ($('#plan_org_id').val() !== '-1') {
+            if ($('#single-template .single-template-name').length) {
+              $('#single-template .single-template-name').html($('#single-template .single-template-name').html().replace('__template_title__', templateTitle));
+            }
+            $('#create-btn').show();
+            $('#single-template').show();
+            $('#no-template').hide();
+            $('#default-template').hide();
+          } else if ($('#plan_funder_id').val() !== '-1') {
+            if ($('#single-template .single-template-name').length) {
+              $('#single-template .single-template-name').html($('#single-template .single-template-name').html().replace('__template_title__', templateTitle));
+            }
+            $('#create-btn').show();
+            $('#single-template').show();
+            $('#no-template').hide();
+          }
           $('#available-templates').fadeOut();
         } else {
           $('#multiple-templates').show();
+          $('#no-template').hide();
           $('#available-templates').fadeIn();
+          $('#single-template, #default-template').hide();
+          $('#create-btn').show();
         }
         toggleSubmit();
       } else {
-        error();
+        $('#no-template').show();
+        $('#single-template').hide();
+        $('#default-template').hide();
       }
     }
   };
@@ -144,7 +165,7 @@ $(() => {
         handleComboboxChange();
       });
 
-      checkbox.on('click', () => {
+      checkbox.on('change', () => {
         handleCheckboxClick(autocomplete, checkbox);
       });
 
@@ -172,4 +193,83 @@ $(() => {
   $('#new_plan #available-templates').hide();
   handleComboboxChange();
   toggleSubmit();
+  // For form v2
+
+  // Clicking on the 'Next' button activates the next tabs
+  $('#next-btn').click((e) => {
+    e.preventDefault();
+    const nextTabId = $('.form-tabs li.active').next().children().attr('href');
+    if (nextTabId) $(`.nav-tabs a[href="${nextTabId}"]`).tab('show');
+  });
+
+  // Watch for tab change for dynamic buttons ('Next' and 'Default Template')
+  $('a[data-toggle="tab"]').on('shown.bs.tab', () => {
+    const activeTab = $('.form-tabs li.active a').attr('href');
+    const lastTab = $('.form-tabs li a').last().attr('href');
+    if (activeTab === lastTab) {
+      $('#next-btn').hide();
+    } else {
+      $('#next-btn').show();
+    }
+  });
+
+  // First and second tab are equivalent to checking the "No funder" checkbox
+  $('a[href="#own_org"], a[href="#other_org"]').on('shown.bs.tab', () => {
+    $('#new_plan #available-templates').hide();
+    $('#plan_no_org').prop('checked', false).change(); // checked: false
+    $('#plan_no_funder').prop('checked', true).change(); // checked: true
+  });
+
+  //  Last tab is equivalent to checking the "No org" checkbox
+  $('a[href="#funder"]').on('shown.bs.tab', () => {
+    $('#new_plan #available-templates').hide();
+    $('#plan_no_org').prop('checked', true).change(); // checked: true
+    $('#plan_no_funder').prop('checked', false).change(); // checked: false
+  });
+
+  // Empty combobox on second tab activation
+  const emptyTab = () => {
+    // $('#plan_org_id').val('-1');
+    $('#org_org_name').val('');
+    $('#single-template, #default-template, #no-template').hide();
+  };
+
+  // Empty combobox on second & third tab activation
+  $('a[href="#other_org"], a[href="#funder"]').on('shown.bs.tab', emptyTab);
+  $('a[href="#other_org"], a[href="#funder"]').on('hidden.bs.tab', emptyTab);
+
+  // Restore default organisation when activating first tab
+  $('a[href="#own_org"]').on('shown.bs.tab', () => {
+    $('#new_plan #available-templates').hide();
+    $('#plan_template_id option').remove();
+    const orgId = $('#own_org_id').val();
+    const orgName = $('#own_org_name').val();
+    const data = `{
+      "plan": {
+        "research_org_id": {
+          "id":${orgId}, 
+          "name":"${orgName}"
+        }
+      }
+    }`;
+
+    // Fetch the available templates based on the funder and research org selected
+    $.ajax({
+      url: $('#template-option-target').val(),
+      data: JSON.parse(data),
+    }).done(success).fail(error);
+  });
+
+
+  $('#new_plan #plan_title').on('change', (e) => {
+    const planTitle = encodeURI(e.target.value);
+    const regex = /plan%5Btitle%5D=([^&]+)/;
+    const defaultBtn = $('#new_plan #end-default-btn');
+    if (!defaultBtn.attr('href').match(regex)) {
+      defaultBtn.attr('href', `${defaultBtn.attr('href')}&plan%5Btitle%5D=${planTitle}`);
+    } else {
+      defaultBtn.attr('href', defaultBtn.attr('href').replace(regex, `plan%5Btitle%5D=${planTitle}`));
+      defaultBtn.attr('href').replace(regex, `plan%5Btitle%5D=${planTitle}`);
+    }
+  });
 });

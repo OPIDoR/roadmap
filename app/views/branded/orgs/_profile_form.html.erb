@@ -156,17 +156,15 @@
                 validation_error: _('You must select at least one organisation type') }
           %>
       </fieldset>
-      <div class="row">
-        <fieldset class="col-xs-8">
-          <legend><%= _('Deactivate') %></legend>
-            <div class="checkbox">
-              <%= f.label :active do %>
-                <%= f.check_box :active%>
-                <%= _('Active') %>
-              <% end %>
-            </div>
-        </fieldset>
-      </div>
+      <fieldset class="col-xs-8">
+        <legend><%= _('Deactivate') %></legend>
+          <div class="checkbox">
+            <%= f.label :active do %>
+              <%= f.check_box :active%>
+              <%= _('Active') %>
+            <% end %>
+          </div>
+      </fieldset>
     <% else %>
       <div class="col-xs-8">
         <dl>

@@ -171,13 +171,6 @@ class UserMailer < ActionMailer::Base
         d_('dmpopidor', 'Account expired in %{tool_name}') %{ :tool_name => Rails.configuration.branding[:application][:name] })
     end
   end
-
-
-  private
-
-  def current_locale(user)
-    user.get_locale.nil? ? FastGettext.default_locale : user.get_locale
-  end
   
   def api_credentials(api_client)
     @api_client = api_client
@@ -187,5 +180,12 @@ class UserMailer < ActionMailer::Base
              subject: _("%{tool_name} API changes") % { tool_name: Rails.configuration.branding[:application][:name] })
       end
     end
+  end
+
+
+  private
+
+  def current_locale(user)
+    user.get_locale.nil? ? FastGettext.default_locale : user.get_locale
   end
 end
